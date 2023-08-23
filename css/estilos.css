@@ -75,6 +75,17 @@ p {
     box-shadow: none;
     color: white;
     padding: 2rem 4rem;
+    position: absolute;
+}
+
+.foot-music, .foot-vid {
+    color: #474544;
+}
+.foot-libros, .foot-gal {
+    color: #474544;
+}
+.foot-cont, .foot-sm {
+    color: #474544;
 }
 
 
@@ -304,6 +315,10 @@ a:hover {
     }
     .iconos-redes {
         padding-left: 0rem;
+    }
+
+    .index-footer {
+        padding: 2rem 3rem;
     }
 }
 
@@ -918,7 +933,7 @@ textarea {
     color: #474544;
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
     padding-top: 1rem;
@@ -994,6 +1009,7 @@ textarea {
     }
     .h2-contacto {
         font-size: 1.7rem;
+        padding: 0.5rem;
     }
 
     .h3-contacto {
