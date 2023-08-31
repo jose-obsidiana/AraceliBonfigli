@@ -40,6 +40,9 @@ h2 {
 p {
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: #474544;
+    letter-spacing: 0.3px;
+
 }
 
 .contenedor {
@@ -85,7 +88,13 @@ p {
 
 .img-border {
     padding: 0;
-    border: #474544 solid 2px;
+    border: #797979 solid 2px;
+}
+
+.img-border:hover {
+    opacity: 0.7;
+    filter: blur(1px); 
+    filter: grayscale(30%);
 }
 
 .bg-body {
@@ -96,6 +105,8 @@ p {
     color: #5A5A5A; 
 
 }
+
+
 
 
 
@@ -759,17 +770,17 @@ font-weight: bold;
 
 
 /* img hover */
-.img-libro-uno {
+.img-libros {
     position: relative;
 }
 
-.img-libro-uno .libro-portada {
+.img-libros .libro-portada {
     position: absolute;
-    transition: opacity 1.5s;
+    transition: opacity 1.8s;
     left: 0;
     }
 
-    .img-libro-uno img.libro-portada:hover {
+    .img-libros img.libro-portada:hover {
     opacity: 0;
     }
 
@@ -825,11 +836,15 @@ font-weight: bold;
     }
 
     .img-libros {
-        width: 95%;
+        width: 75%;
         background-size: cover;
         background-position: center;
-        padding-left: 5rem;
-        padding-right: 3rem;
+        margin-left: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .padding-libro {
+        padding-left: 1rem;
     }
 
 
@@ -840,7 +855,7 @@ font-weight: bold;
 
     .img-libro-uno {
         grid-column-start: 1;        
-        grid-row-start: 1 / 3;
+        grid-row: 1 / 3;
     }
 
     .h2-libro-uno {
@@ -905,10 +920,17 @@ font-weight: bold;
         margin-bottom: 5rem;
     }
     .img-bt {
-        width: 90%;
+        width: 97%;
     }
     .img-vertical {
-        width: 50%;
+        width: 70%;
+    }
+
+    .boton-prev {
+        left: -4%;
+    }
+    .boton-next {
+        right: -4%;
     }
 }
 
