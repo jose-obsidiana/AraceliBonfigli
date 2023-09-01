@@ -1204,6 +1204,7 @@ textarea {
         z-index: -2;
         opacity: 0.7;
     }
+
     .contenedor-png .png-dos {
         animation: animacion-dos 50s linear infinite;
             }
@@ -1284,32 +1285,66 @@ textarea {
             left: 0;
         }
         .png-tres {
-            top: 40%;
-            left: 30%;
+            top: 20%;
+            left: 10%;
         } 
         .png-cuatro {
-            right: 1rem;
-            bottom: 6rem;
-        }
+            left: 26rem;
+            bottom: -3rem;
+            position: relative;
+        }      
         .png-cinco {
-            left: 13rem;
-            bottom: 6rem;
-        }
-        .png-seis {
             right: 35%;
             top: 41%;
         }
+        .png-seis {
+            right: -2rem;
+            bottom: -2rem;
+            position: relative;
+        }
         .png-siete {   
             width: 33%;
-            left: 0;
-            bottom: 6.5rem;
+            right: 23rem;
+            bottom: -2rem;
+            position: relative;
+        }
     }
+
+
+    @media screen and (min-width:600px) {
+        .p-sm {
+            padding: 2rem 7%;
+        }
+        .png {
+            width: 22%;
+        }
+        .png-cuatro {
+            left: 44rem;
+            bottom: -5rem;
+            position: relative;
+        }      
+        .png-seis {
+            right: -10rem;
+            bottom: -2rem;
+            position: relative;
+        }
+        .png-siete {   
+            width: 33%;
+            right: 23rem;
+            bottom: -2rem;
+            position: relative;
+        }
+
+    
+    }
+
 
     @media screen and (min-width:1024px) {
         .contenedor-sm {
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin: 15rem;
+            margin-bottom: 8rem;
         }
 
             .img-sm {
@@ -1324,10 +1359,9 @@ textarea {
             }
 
             .png {
-                width: 10%;
+                width: 13%;
             }
             .png-uno {
-                width: 15%;
                 right: 15rem;
                 top: 15rem;
             }
@@ -1341,25 +1375,25 @@ textarea {
                 left: 30%;
             } 
             .png-cuatro {
-                width: 11%;
-                right:1rem;
+                left: 130rem;
                 bottom: 5rem;
-            }
+                position: fixed;
+            }      
             .png-cinco {
-                width: 13%;
-                left: 70%;
-                bottom: 7rem;
-
+                width: 10%;
             }
             .png-seis {
-                right: 35%;
-                top: 41%;
+                right: -40rem;
+                bottom: -2rem;
+
             }
             .png-siete { 
-                width: 14%;
-                bottom: 8%;
+                width: 13%;  
+                right: 20rem;
+                bottom: -2rem;
+
             }
-            
-        }   
+
+
     }
     
