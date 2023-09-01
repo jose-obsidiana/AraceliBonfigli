@@ -1198,10 +1198,54 @@ textarea {
         background-color: #FFDFDF;
     }  
 
-    .png-uno {
+    /* propiedades png */
+    .png {
         position: fixed;
-        z-index: 0;
-        opacity: 0.6;
+        z-index: -2;
+        opacity: 0.7;
+    }
+    .contenedor-png .png-dos {
+        animation: animacion-dos 50s linear infinite;
+            }
+    
+
+    @keyframes animacion-dos {
+        0% {
+            transform: rotate(32deg);
+        }   
+        10% {
+            transform: rotate(64deg);
+        }
+    
+        20% {
+            transform: rotate(96deg);
+        }
+        30% {
+            transform: rotate(128deg);
+        }
+        40% {
+            transform: rotate(160deg);
+        }
+        50% {
+            transform: rotate(192deg);
+        }
+        60% {
+            transform: rotate(224deg);
+        }   
+        70% {
+            transform: rotate(256deg);
+        }
+    
+        80% {
+            transform: rotate(288deg);
+        }
+        90% {
+            transform: rotate(320deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    
     }
 
 
@@ -1226,12 +1270,39 @@ textarea {
             position: relative;
             text-shadow: 0 0 0 #474544;
         }
+        .png {
+            width: 30%;
+        }
 
         .png-uno {
             width: 33%;
             right: -0.2rem;
             top: 13rem;
         }
+        .png-dos {
+            top: 5rem;
+            left: 0;
+        }
+        .png-tres {
+            top: 40%;
+            left: 30%;
+        } 
+        .png-cuatro {
+            right: 1rem;
+            bottom: 6rem;
+        }
+        .png-cinco {
+            left: 13rem;
+            bottom: 6rem;
+        }
+        .png-seis {
+            right: 35%;
+            top: 41%;
+        }
+        .png-siete {   
+            width: 33%;
+            left: 0;
+            bottom: 6.5rem;
     }
 
     @media screen and (min-width:1024px) {
@@ -1252,22 +1323,43 @@ textarea {
                 padding: 0 0 0 5rem
             }
 
+            .png {
+                width: 10%;
+            }
             .png-uno {
                 width: 15%;
                 right: 15rem;
                 top: 15rem;
+            }
+            .png-dos {
+                top: 9rem;
+                left: 20rem;
+            }
+            .png-tres {
+                width: 8%;
+                top: 27%;
+                left: 30%;
+            } 
+            .png-cuatro {
+                width: 11%;
+                right:1rem;
+                bottom: 5rem;
+            }
+            .png-cinco {
+                width: 13%;
+                left: 70%;
+                bottom: 7rem;
 
             }
-        }
+            .png-seis {
+                right: 35%;
+                top: 41%;
+            }
+            .png-siete { 
+                width: 14%;
+                bottom: 8%;
+            }
+            
+        }   
+    }
     
-
-
-    
-
-
-
-
-
-
-
-
