@@ -1,7 +1,7 @@
 
 //INDEX
 .imagen-body {
-    background-image: url(../multimedia/9.jpg);
+    background-image: url(../multimedia/9.webp);
     @extend %img-propiedades;
     background-attachment: fixed;
 }
@@ -154,7 +154,7 @@ footer, .index-footer {
 /* mq tablet */
 @media screen and (min-width:600px) {
     .imagen-body {
-        background-image: url(../multimedia/8.jpg);
+        background-image: url(../multimedia/8.webp);
     }
 
     header, .contenedor-index {
@@ -251,7 +251,7 @@ footer, .index-footer {
 
 @media screen and (min-width:1600px) {
     .imagen-body {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../multimedia/12.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../multimedia/12.webp);
     }
 }
 

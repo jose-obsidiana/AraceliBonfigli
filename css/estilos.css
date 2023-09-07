@@ -183,7 +183,7 @@ footer, .footer {
     margin: 10rem; } }
 
 .imagen-body {
-  background-image: url(../multimedia/9.jpg);
+  background-image: url(../multimedia/9.webp);
   background-attachment: fixed; }
 
 header .index-nombre {
@@ -277,7 +277,7 @@ footer, .index-footer {
 /* mq tablet */
 @media screen and (min-width: 600px) {
   .imagen-body {
-    background-image: url(../multimedia/8.jpg); }
+    background-image: url(../multimedia/8.webp); }
   header .index-nombre, .contenedor-index .index-nombre {
     font-size: 5rem; }
   header div .araceli, .contenedor-index div .araceli {
@@ -325,7 +325,7 @@ footer, .index-footer {
 
 @media screen and (min-width: 1600px) {
   .imagen-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../multimedia/12.jpg); } }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../multimedia/12.webp); } }
 
 .contenedor nav ul div .a-music, .header-music nav ul div .a-music, .header-pag nav ul div .a-music {
   color: #474544; }
