@@ -1,0 +1,121 @@
+
+//VIDEOS
+main {
+    div, #contenedor-videos {
+        .info-vid {
+            margin-right: 12rem;
+            border: $gris-claro 2px solid;
+            width: 80%;
+            height: 57rem;
+            padding: 1.5rem;
+            margin-top: 8.4rem;
+            font-size: 0.7rem;
+            .lista-videos {
+                font-size: 18px; 
+                padding: 0;
+                text-shadow: 0 0 0 $gris-oscuro;
+                letter-spacing: 0.3px;    
+            }
+            .info-video-uno {
+                padding-top: 1.5rem;
+                margin-bottom: 0;
+            }
+            .info-video {
+                padding-bottom: 2rem;
+                margin: 0;
+            }
+        }
+        .h2-videos {  
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.7rem;
+            margin-top: 2rem;
+            color: $gris-oscuro;         
+        }
+        .h3-videos {
+            @include estilos(1.7rem, $gris-oscuro);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .enlaces {
+            padding-bottom: 10rem;
+        }
+        ul {
+            li {
+                .span-vid {
+                    color: $azul-claro;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) {
+    main {
+        #contenedor-videos {
+            @include flex;
+            }
+        div {
+            .info-vid {
+                display: none;
+            }
+            .h2-videos {
+                margin-top: 0;
+            }
+            iframe {
+                width: 80%;
+                height: 45vw;
+                position: relative;
+                left: 10%;
+            }
+        }     
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main {
+        #contenedor-videos {
+            @include grid(60% 40%, repeat(5, 1fr));
+            padding-bottom: 10rem;
+        }
+
+        div {
+            .h2-videos {
+                margin-top: 4rem;
+            }
+            .info-uno {
+                grid-row-start: 1;
+                grid-column-start: 2;
+                margin-right: 10rem;        
+            }
+            .video-uno {
+                grid-row-start: 1;
+                grid-column-start: 1;
+            }
+            .video-dos {
+                grid-row-start: 2;
+                grid-column-start: 1;
+            }
+            .info-dos {
+                grid-row-start: 2;
+                grid-column-start: 2;
+            }
+            .info-vid {
+                display: block;
+                .lista-videos {
+                    font-size: 2.6rem;
+                }
+            }
+
+            iframe {
+                @include width-height(73%, 32vw);
+                position: relative;
+                left: 15%;
+                right: 0%;
+            }
+        }        
+    }
+}
+
+

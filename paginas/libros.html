@@ -17,72 +17,70 @@
 
 <body class="body-libros bg-body">
     
-    <header class="contenedor header-libros header-pag">  
+    <header class="contenedor header-pag">  
         <div class="index-nombre">
-            <a class="index-libros araceli" href="../index.html">ARACELI BONFIGLI</a>
+            <a class="index-pag araceli" href="../index.html">ARACELI BONFIGLI</a>
         </div>  
             
 
         <nav class="navegacion">   <!-- Menú de navegación -->
             <ul> <!-- Lista no ordenada -->
                 <div class="nav-uno">
-                    <li><a class="a-libros" href="../paginas/musica.html">Música</a></li>
-                    <li><a class="a-libros" href="../paginas/videos.html">Videos</a></li> 
-                    <li><a class="a-libros" href="../paginas/libros.html">Libros</a></li>
+                    <li><a class="a-pag" href="../paginas/musica.html">Música</a></li>
+                    <li><a class="a-pag" href="../paginas/videos.html">Videos</a></li> 
+                    <li><a class="a-pag" href="../paginas/libros.html">Libros</a></li>
                 </div>
                 <div class="nav-dos">
-                    <li><a class="a-libros" href="../paginas/galeria.html">Galería</a></li>      
-                    <li><a class="a-libros" href="../paginas/contacto.html">Contacto</a></li> 
-                    <li><a class="a-libros" href="../paginas/sobre_mi.html">Sobre Mí</a></li> 
+                    <li><a class="a-pag" href="../paginas/galeria.html">Galería</a></li>      
+                    <li><a class="a-pag" href="../paginas/contacto.html">Contacto</a></li> 
+                    <li><a class="a-pag" href="../paginas/sobre_mi.html">Sobre Mí</a></li> 
                 </div>               
             </ul>
         </nav>
     </header>
 
     <!-- menu bootstrap dispositivo mobile -->
-    <nav class="navbar bg-body-tertiary fixed-top header-bt">
-        <div class="container-fluid container-bt bg-lib">
-            <a class="navbar-brand araceli-bt" href="../index.html">ARACELI BONFIGLI</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-icon-bt"></span>
-            </button>
+    <div id="bootstrap">
+        <nav class="navbar bg-body-tertiary fixed-top header-bt">
+            <div class="container-fluid container-bt bg-lib">
+                <a class="navbar-brand araceli-bt" href="../index.html">ARACELI BONFIGLI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-icon-bt"></span>
+                </button>
 
-            <div class="offcanvas offcanvas-end bg-bt" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <a class="offcanvas-title araceli-bt" id="offcanvasNavbarLabel" href="">ARACELI BONFIGLI</a>
-                <button type="button" class="btn-close boton-close-bt" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
+                <div class="offcanvas offcanvas-end bg-bt" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title araceli-bt" id="offcanvasNavbarLabel" href="">ARACELI BONFIGLI</a>
+                        <button type="button" class="btn-close boton-close-bt" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
 
-                <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 lista-bt">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/musica.html">Música</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/libros.html">Libros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/sobre_mi.html">Sobre Mí</a>
-                    </li> 
-                    
-                    </ul>
-                    </li>
-                </ul>
-                
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 lista-bt">
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/musica.html">Música</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/libros.html">Libros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/sobre_mi.html">Sobre Mí</a>
+                            </li> 
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
+    </div>
 
         
 
@@ -98,7 +96,7 @@
 
             <h2 class="h2-libro-uno">Los Viajes Del Silencio (2018)</h2>
             <div class="descripcion-libro-uno">
-                <p class="prologo-uno padding-libro">El presente poemario, fue elaborado en el marco del Proyecto de Investigación “Memorias de la resistencia. Estrategias de sobrevivencia de las mujeres detenidas por razones políticas en argentina, durante el período 1976/1983”, aprobado y financiado por la Universidad Nacional de Villa María, durante el período 2016/2017. Estos poemas surgen tras meses de trabajo y visitas a los Centros de Detención Clandestina, surgen de las charlas con los sobrevivientes, surgen de la lectura de los libros y materiales de consulta utilizados durante el proceso de Investigación, y surgen, finalmente, como subjetividades inevitables. 
+                <p class="prologo-uno padding-libro">El presente poemario, fue elaborado en el marco del Proyecto de Investigación “Memorias de la resistencia. Estrategias de sobrevivencia de las mujeres detenidas por razones políticas en argentina, durante el período 1976/1983”, aprobado y financiado por la Universidad Nacional de Villa María, durante el período 2016/2017. Estos poemas surgen tras meses de trabajo y visitas a los Centros de Detención Clandestina, surgen de las charlas con los sobrevivientes, surgen de la lectura de los libros y materiales de consulta utilizados durante el proceso de Investigación, y surgen, finalmente, como subjetividades inevitables.</p>
                     <ul class="lista-libros">
                         <li>Prólogo: Liliana Guillot</li>
                         <li>Dibujos: Georgina Cittadini</li>
@@ -121,7 +119,7 @@
     
 
 
-    <footer class="footer text-shadow foot-libros">
+    <footer class="footer bg-footer">
         <div class="iconos-info">
             <ul>
                 <li class="info num-pad">                        

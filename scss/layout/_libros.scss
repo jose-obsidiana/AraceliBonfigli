@@ -1,0 +1,106 @@
+
+// LIBROS
+main {
+    div, .contenedor-libros {
+        .img-libros {
+            position: relative;
+            .libro-portada {
+                position: absolute;
+                transition: opacity 1.8s;
+                left: 0;
+                &:hover {
+                    opacity: 0;
+                    }
+                }
+            }
+        div {
+            .lista-libros {
+                padding: 0 0 10rem;
+                font-weight: bold;
+            }
+        }    
+    }
+}
+
+@media screen and (min-width:320px) {
+    main {
+        .contenedor-libros {
+            @include flex;
+            padding: 0 2.5rem;
+        }
+
+        div {
+            .h2-libro-uno {
+                color: $azul-oscuro;
+            }
+            .h2-libro-dos {
+                color: $violeta-oscuro;
+            }  
+            .h2-libro-uno, .h2-libro-dos {
+                padding: 3rem 0rem 1rem;
+                letter-spacing: 2px;
+            }
+            .img-libros {
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                object-fit: cover;     
+            }
+            div {
+                .prologo-dos {
+                    padding-bottom: 10rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+@media screen and (min-width:1024px) {
+    main {
+        .contenedor-libros {
+            padding: 0 15rem;
+            @include grid(45% 55%, 7% 43% 7% 43%);
+        }
+
+        div {
+            .h2-libro-uno, .h2-libro-dos {
+                font-size: 2rem;
+                letter-spacing: 3px;
+            }
+            .h2-libro-uno {
+                grid-column-start: 2;
+                grid-row-start: 1;
+                padding-top: 3rem;
+            }
+            .h2-libro-dos {
+                grid-row-start: 3;
+                padding-top: 4rem;
+            }
+            .img-libros {
+                width: 80%;
+                background-size: cover;
+                background-position: center;
+                margin-left: 5rem;
+                padding-bottom: 2rem;
+            }
+            .img-libro-uno {
+                grid-column-start: 1;        
+                grid-row: 1 / 3;
+            }
+            .img-libro-dos {
+                grid-row-start: 3;
+            }
+            .descripcion-libro-uno {
+                grid-column-start: 2;
+                grid-row-start: 2;
+            }
+            .descripcion-libro-dos {
+                grid-row-start: 4;
+                grid-column-start: 2;
+            }
+        }
+    }
+}
+
+

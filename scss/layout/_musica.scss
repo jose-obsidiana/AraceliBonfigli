@@ -1,0 +1,191 @@
+
+//MUSICA
+.contenedor, .header-music, .header-pag {
+    nav {
+        ul {
+            div {
+                .a-music {
+                    color: $gris-oscuro;
+                    &:hover {
+                        color: $gris-claro;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* discos */
+main {
+    div {
+        img {
+            width: 100%;
+            object-fit: cover; 
+            padding: 2rem;
+            background-position: center;
+        }
+    }
+
+    div {
+        .descripcion {
+            padding: 4rem;
+
+            .descripcion-album {
+                color: $azul-claro;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-bottom: 1rem;
+                font-family: 'Quicksand', sans-serif;
+            }
+            .descripcion-ep {
+                color: $violeta-claro;
+                font-weight: bold;
+                padding: 0 0 1rem;
+            }
+        }
+        
+        .canciones {
+            padding: 4rem 6rem; 
+            font-size: 4rem; 
+            .h2-music {
+                padding-top: 1.5rem;
+                @include estilos(2rem, $azul-claro);
+                padding-bottom: 2rem;
+            }
+            .ep {
+                @include estilos(2rem, $violeta-claro);
+            }
+            .h3-music {
+                text-align: start;
+                color: $violeta-claro;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-bottom: 1.5rem;
+            }
+            .lista-music {
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 0.2px;
+                font-size: 2.7rem;
+                padding-left: 0;
+                .li-pad {
+                    padding-bottom:0.5rem ;
+                    &:hover {
+                        background-color: $lista-hover;
+                        border-radius: 5%;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) { 
+    .header-pag {
+        display: none;
+    }
+
+    main {
+        #discos {
+            display: grid;
+            grid-template-columns: 1fr; 
+            }
+            
+        div {
+            .canciones {
+                padding: 0rem 4rem;
+                
+                .lista-music {
+                    padding-bottom: 0;
+                }
+            }
+            .img-album {
+                text-align: center;
+            }
+            .descripcion {
+                padding-top: 0;
+                padding-bottom: 7rem;
+                .parrafo {
+                    display: none;
+                }
+            }
+            img {
+                width: 85%;     
+            }
+        }    
+    }
+}
+
+@media screen and (min-width:600px) {
+    main {
+        div {
+            img {
+                width: 89%;
+            }
+        }
+        #discos {
+            margin: 2rem 6rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .header-pag {
+        display: flex;
+    }
+
+    main {
+        #discos {
+            @include grid(30% 40% 30%, repeat(4, 1fr));
+            margin: 2rem 7rem;
+            row-gap: 30rem;
+            margin-bottom: 30rem;  
+        }
+        div {
+            img {
+                width: 100%;
+            }
+            .descripcion {
+                .parrafo {
+                    display: block;
+                    font-size: 1.8rem;
+                }
+                .descripcion-album, .descripcion-ep {
+                    padding-top: 2rem;
+                    font-size: 2rem;
+                    padding-left: 0;
+                }
+            }
+
+            .canciones {
+                .h2-music {
+                    padding: 2rem 0rem;
+                    font-size: 2rem;
+                }
+                .h3-music {
+                    padding-left: 0;
+                }
+                .ep {
+                    padding-top: 2rem;
+                    font-size: 2rem;
+                    padding-left: 0;
+                }
+                .lista-music {
+                    font-size: 2.9rem;
+                    padding: 0;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 2rem 4rem;
+    }
+}
+
+
+
+
+
+
+
