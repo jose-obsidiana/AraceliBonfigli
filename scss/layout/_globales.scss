@@ -16,6 +16,10 @@
             font-size: 1.8rem;
             font-weight: bold;
         }
+        .text-shadow {
+            text-shadow: 0 0 0 $gris-oscuro;
+
+        }
         .img-border {
             padding: 0;
             border: $gris-claro solid 2px;
@@ -60,6 +64,7 @@
                 div {
                     .a-pag {
                         color: $gris-oscuro;
+                        font-size: 1.7rem;
                         &:hover {
                             color: $gris-claro;
                         }
@@ -85,11 +90,13 @@
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
+                
             }
             h3 {
                 font-family: 'Quicksand', sans-serif;
                 text-align: center;
-                font-weight: 500;
+                font-weight: 600;
+                color: $azul-claro;
             }
             p {
                 font-family: 'Quicksand', sans-serif;
@@ -106,7 +113,6 @@
         bottom: 0;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
         border-top: $gris-claro solid 1.5px;
         box-shadow: 0 0 5px 1px $gris-claro;
         padding: 1rem 2rem;
@@ -136,6 +142,9 @@
         main {
             h1 {
                 @include estilos(3rem, $gris-oscuro);
+            }
+            h2 {
+                @include estilos(2rem, $azul-claro);
             }
         }
         /* propiedades bootstrap - header */
@@ -199,5 +208,17 @@
                 font-size: 4rem;
                 margin: 10rem;
             }
+            h2 {
+                font-size: 2.3rem;
+            }
+            h3 {
+                font-size: 1.8rem;
+                
+            }
+        }
+
+        footer, .footer {
+            align-items: center;
+
         }
     }

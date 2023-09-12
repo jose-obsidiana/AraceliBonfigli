@@ -42,6 +42,9 @@ main {
                 font-weight: bold;
                 padding: 0 0 1rem;
             }
+            .lista-padding {
+                padding-top: 2rem;
+            }
         }
         
         .canciones {
@@ -159,14 +162,12 @@ main {
             .canciones {
                 .h2-music {
                     padding: 2rem 0rem;
-                    font-size: 2rem;
                 }
                 .h3-music {
                     padding-left: 0;
                 }
                 .ep {
                     padding-top: 2rem;
-                    font-size: 2rem;
                     padding-left: 0;
                 }
                 .lista-music {

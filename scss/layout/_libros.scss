@@ -15,8 +15,15 @@ main {
             }
         div {
             .lista-libros {
-                padding: 0 0 10rem;
                 font-weight: bold;
+            }
+            .fecha {
+                color: $azul-claro;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+            .fecha-dos {
+                color: $violeta-claro;
             }
         }    
     }
@@ -47,9 +54,12 @@ main {
                 object-fit: cover;     
             }
             div {
-                .prologo-dos {
+                .lista-libros {
+                    padding-bottom: 1rem;
+                }
+                .fecha {
                     padding-bottom: 10rem;
-                    }
+                }
                 }
             }
         }
@@ -65,13 +75,13 @@ main {
 
         div {
             .h2-libro-uno, .h2-libro-dos {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 letter-spacing: 3px;
             }
             .h2-libro-uno {
                 grid-column-start: 2;
                 grid-row-start: 1;
-                padding-top: 3rem;
+                
             }
             .h2-libro-dos {
                 grid-row-start: 3;
@@ -98,6 +108,9 @@ main {
             .descripcion-libro-dos {
                 grid-row-start: 4;
                 grid-column-start: 2;
+            }
+            .lista-libros {
+                padding-top: 2rem;
             }
         }
     }

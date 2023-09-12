@@ -104,7 +104,7 @@ footer, .index-footer {
 
                 .iconos-music {
                     @include flex-row;
-                    padding-bottom: 1rem;
+                    padding-bottom: 0.5rem;
                     padding-left: 3rem;
                 }
                 .iconos-redes {
@@ -131,7 +131,7 @@ footer, .index-footer {
         div {
             ul {
                 .num-pad {
-                    width: 90%;
+                    width: 100%;
                 }
                 .map {
                     width: 100%;

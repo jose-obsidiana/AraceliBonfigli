@@ -26,14 +26,12 @@ main {
             }
         }
         .h2-videos {  
-            font-weight: 700;
             text-align: center;
             margin-bottom: 0.7rem;
             margin-top: 2rem;
-            color: $gris-oscuro;         
+            color: $azul-claro;         
         }
         .h3-videos {
-            @include estilos(1.7rem, $gris-oscuro);
             text-align: center;
             margin-bottom: 1rem;
         }
