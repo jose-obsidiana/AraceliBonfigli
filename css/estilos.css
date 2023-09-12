@@ -71,7 +71,7 @@ body {
   padding: 3rem;
   border-bottom: #929292 solid 1.5px;
   box-shadow: 0 0 5px 2px #929292;
-  background-color: #ffefe1;
+  background-color: #ffead7;
   position: sticky;
   top: 0;
   right: 0;
@@ -96,7 +96,7 @@ main h1 {
   margin-bottom: 7rem;
   letter-spacing: 7px;
   font-weight: 600;
-  text-shadow: 0 0 0 #224c82; }
+  text-shadow: 0 0 0 #2b4d7a; }
 
 main div h2 {
   font-family: 'Quicksand', sans-serif;
@@ -107,7 +107,7 @@ main div h3 {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   font-weight: 600;
-  color: #4b6ba2; }
+  color: #474544; }
 
 main div p {
   font-family: 'Quicksand', sans-serif;
@@ -145,12 +145,12 @@ footer, .footer {
     color: #474544; }
   main h2 {
     font-size: 2rem;
-    color: #4b6ba2; }
+    color: #46669c; }
   /* propiedades bootstrap - header */
   #bootstrap nav .container-bt {
     padding: 2rem;
     padding-right: 1.5rem;
-    background-color: #ffefe1;
+    background-color: #ffead7;
     position: fixed;
     top: 0;
     border-bottom: #929292 solid 0.5px;
@@ -354,15 +354,17 @@ main div img {
 main div .descripcion {
   padding: 4rem; }
   main div .descripcion .descripcion-album {
-    color: #4b6ba2;
+    color: #46669c;
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 1rem;
     font-family: 'Quicksand', sans-serif; }
   main div .descripcion .descripcion-ep {
-    color: #775a96;
+    color: #6f5a96;
     font-weight: bold;
     padding: 0 0 1rem; }
+  main div .descripcion .album-fluir {
+    color: #009582; }
   main div .descripcion .lista-padding {
     padding-top: 2rem; }
 
@@ -372,14 +374,16 @@ main div .canciones {
   main div .canciones .h2-music {
     padding-top: 1.5rem;
     font-size: 2rem;
-    color: #4b6ba2;
+    color: #46669c;
     padding-bottom: 2rem; }
+  main div .canciones .h2-fluir {
+    color: #009582; }
   main div .canciones .ep {
     font-size: 2rem;
-    color: #775a96; }
+    color: #6f5a96; }
   main div .canciones .h3-music {
     text-align: start;
-    color: #775a96;
+    color: #6f5a96;
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 1.5rem; }
@@ -477,7 +481,7 @@ main div .h2-videos, main #contenedor-videos .h2-videos {
   text-align: center;
   margin-bottom: 0.7rem;
   margin-top: 2rem;
-  color: #4b6ba2; }
+  color: #474544; }
 
 main div .h3-videos, main #contenedor-videos .h3-videos {
   text-align: center;
@@ -487,7 +491,7 @@ main div .enlaces, main #contenedor-videos .enlaces {
   padding-bottom: 10rem; }
 
 main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
-  color: #4b6ba2;
+  color: #46669c;
   font-weight: 500; }
 
 @media screen and (min-width: 320px) {
@@ -549,12 +553,12 @@ main div div .lista-libros, main .contenedor-libros div .lista-libros {
   font-weight: bold; }
 
 main div div .fecha, main .contenedor-libros div .fecha {
-  color: #4b6ba2;
+  color: #46669c;
   font-weight: bold;
   font-size: 2rem; }
 
 main div div .fecha-dos, main .contenedor-libros div .fecha-dos {
-  color: #775a96; }
+  color: #6f5a96; }
 
 @media screen and (min-width: 320px) {
   main .contenedor-libros {
@@ -562,7 +566,7 @@ main div div .fecha-dos, main .contenedor-libros div .fecha-dos {
     flex-direction: column;
     padding: 0 2.5rem; }
   main div .h2-libro-uno {
-    color: #224c82; }
+    color: #2b4d7a; }
   main div .h2-libro-dos {
     color: #643e8c; }
   main div .h2-libro-uno, main div .h2-libro-dos {
@@ -618,12 +622,12 @@ main div .h2-galeria {
   letter-spacing: 1.6px;
   padding-bottom: 0;
   margin-bottom: 0;
-  color: #474544; }
+  color: #2b4d7a; }
 
 main div .h3-gal {
   letter-spacing: 1px;
   padding-top: 0.3rem;
-  color: #224c82; }
+  color: #2b4d7a; }
 
 main div .img-bt {
   padding: 0; }
@@ -674,21 +678,10 @@ main div .img-bt {
   background: #fdeddf;
   background: linear-gradient(180deg, #fdeddf 34%, #dae7fc 100%); }
 
-main .contenedor-png .png-cont {
-  width: 8%;
+main .contenedor-png {
   position: fixed;
   z-index: -2;
-  opacity: 0.7; }
-
-main .contenedor-png .png-siete {
-  left: 30rem;
-  bottom: 30rem;
-  z-index: 1; }
-
-main .contenedor-png .png-ocho {
-  right: 10rem;
-  top: 15rem;
-  width: 10%; }
+  opacity: 0.8; }
 
 main #container {
   border: #474544 solid 3px;
@@ -766,9 +759,22 @@ main #container {
     text-transform: uppercase; }
     main #container form div #form_button:hover {
       background: #474544;
-      color: #ffefe1; }
+      color: #ffead7; }
 
 @media screen and (min-width: 320px) {
+  main .contenedor-png .png-cont {
+    width: 27%;
+    position: fixed;
+    z-index: 0;
+    opacity: 0.8; }
+  main .contenedor-png .png-siete, main .contenedor-png .png-nueve, main .contenedor-png .png-once {
+    display: none; }
+  main .contenedor-png .png-ocho {
+    right: 0rem;
+    top: 6rem; }
+  main .contenedor-png .png-diez {
+    left: 1rem;
+    top: 15rem; }
   main #container {
     max-width: 90%; }
     main #container .h2-contacto {
@@ -787,6 +793,27 @@ main #container {
         width: 100%; } }
 
 @media screen and (min-width: 1024px) {
+  main .contenedor-png .png-cont {
+    width: 8%; }
+  main .contenedor-png .png-siete, main .contenedor-png .png-nueve, main .contenedor-png .png-once {
+    display: block; }
+  main .contenedor-png .png-siete {
+    left: 10rem;
+    top: 12rem; }
+  main .contenedor-png .png-ocho {
+    right: 10rem;
+    top: 15rem;
+    width: 10%; }
+  main .contenedor-png .png-nueve {
+    right: 30rem;
+    top: 50rem; }
+  main .contenedor-png .png-diez {
+    left: 70rem;
+    top: 20rem;
+    width: 7%; }
+  main .contenedor-png .png-once {
+    left: 30rem;
+    bottom: 3rem; }
   main #container {
     max-width: 768px; }
     main #container .h2-contacto {
@@ -819,7 +846,7 @@ main article div .p-padding, main .contenedor-sm div .p-padding {
 
 main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
   font-size: 1.8rem;
-  color: #4b6ba2;
+  color: #46669c;
   font-weight: bold; }
 
 @media screen and (min-width: 320px) {

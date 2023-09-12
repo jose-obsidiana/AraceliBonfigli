@@ -42,6 +42,9 @@ main {
                 font-weight: bold;
                 padding: 0 0 1rem;
             }
+            .album-fluir {
+                color: #009582;
+            }
             .lista-padding {
                 padding-top: 2rem;
             }
@@ -54,6 +57,9 @@ main {
                 padding-top: 1.5rem;
                 @include estilos(2rem, $azul-claro);
                 padding-bottom: 2rem;
+            }
+            .h2-fluir {
+                color: #009582;
             }
             .ep {
                 @include estilos(2rem, $violeta-claro);
@@ -157,6 +163,7 @@ main {
                     font-size: 2rem;
                     padding-left: 0;
                 }
+
             }
 
             .canciones {
