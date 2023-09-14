@@ -61,6 +61,7 @@ main {
 
         article, .contenedor-sm {
             @include flex;
+            margin-bottom: 10rem;
             .img-sm {
                 width: 100%;
                 text-align: center;

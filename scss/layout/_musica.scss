@@ -43,7 +43,7 @@ main {
                 padding: 0 0 1rem;
             }
             .album-fluir {
-                color: #009582;
+                color: $verde-agua;
             }
             .lista-padding {
                 padding-top: 2rem;
@@ -54,12 +54,11 @@ main {
             padding: 4rem 6rem; 
             font-size: 4rem; 
             .h2-music {
-                padding-top: 1.5rem;
+                padding: 2rem 0.5rem;
                 @include estilos(2rem, $azul-claro);
-                padding-bottom: 2rem;
             }
             .h2-fluir {
-                color: #009582;
+                color: $verde-agua;
             }
             .ep {
                 @include estilos(2rem, $violeta-claro);
@@ -77,10 +76,12 @@ main {
                 font-size: 2.7rem;
                 padding-left: 0;
                 .li-pad {
-                    padding-bottom:0.5rem ;
+                    padding: 0.3rem 0.5rem;
                     &:hover {
-                        background-color: $lista-hover;
-                        border-radius: 5%;   
+                        color: rgb(255, 245, 231);
+                        background-color: $gris-oscuro;
+                        border-radius: 8px;
+                        
                     }
                 }
             }
@@ -167,9 +168,6 @@ main {
             }
 
             .canciones {
-                .h2-music {
-                    padding: 2rem 0rem;
-                }
                 .h3-music {
                     padding-left: 0;
                 }

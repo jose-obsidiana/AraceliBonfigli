@@ -13,53 +13,95 @@ main {
                     }
                 }
             }
-        div {
+                
             .lista-libros {
                 font-weight: bold;
+                margin-top: 4rem;
             }
             .fecha {
                 color: $azul-claro;
                 font-weight: bold;
                 font-size: 2rem;
+                margin: 0;
             }
             .fecha-dos {
                 color: $violeta-claro;
             }
-        }    
+        }
+        .boton-libro-uno, .boton-libro-dos {
+            .boton-libro {
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: 95%;
+                height: 4rem;
+                color: $gris-oscuro;
+                background-color: #cfcfcf;
+                border: 1px solid $gris-oscuro;
+                border-radius: 5px;
+                &:hover {
+                    background-color: #b7bac4;
+                }
+            }
+        }
     }
-}
+
 
 @media screen and (min-width:320px) {
     main {
         .contenedor-libros {
             @include flex;
             padding: 0 2.5rem;
-        }
 
-        div {
-            .h2-libro-uno {
-                color: $azul-oscuro;
-            }
-            .h2-libro-dos {
-                color: $violeta-oscuro;
-            }  
-            .h2-libro-uno, .h2-libro-dos {
-                padding: 3rem 0rem 1rem;
-                letter-spacing: 2px;
-            }
-            .img-libros {
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                object-fit: cover;     
-            }
-            div {
-                .lista-libros {
-                    padding-bottom: 1rem;
+                .h2-libro-uno {
+                    color: $azul-oscuro;
                 }
-                .fecha {
-                    padding-bottom: 10rem;
+                .h2-libro-dos {
+                    color: $violeta-oscuro;
+                }  
+                .h2-libro-uno, .h2-libro-dos {
+                    padding: 1.5rem 0rem;
+                    margin: 0;
+                    letter-spacing: 2px;
                 }
+                .img-libros {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    object-fit: cover;     
+                }
+                    .lista-libros {
+                        padding-bottom: 1rem;
+                    }
+                
+                .boton-libro-uno, .boton-libro-dos {
+                    padding: 0rem 5rem;
+                    width: 21rem;
+                    text-align: center;
+                    margin: 0 3rem 12rem 4rem;
+                    .img-nube {
+                        padding: 0;
+                        width: 50%;
+                    }
+                    .boton-libro {
+                        font-size: 1.3rem;
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:600px) {
+        main {
+            .contenedor-libros {
+                .img-libros {
+                    width: 70%;
+                    
+                }
+                .boton-libro-uno, .boton-libro-dos {
+                    margin-left: 15rem;    
                 }
             }
         }
@@ -69,51 +111,72 @@ main {
 @media screen and (min-width:1024px) {
     main {
         .contenedor-libros {
-            padding: 0 15rem;
-            @include grid(45% 55%, 7% 43% 7% 43%);
-        }
+            margin: 0rem 12rem;
+            @include grid(45% 25% 30%, 4% 42% 4% 42%);
 
-        div {
-            .h2-libro-uno, .h2-libro-dos {
-                font-size: 2.5rem;
-                letter-spacing: 3px;
+            .boton-libro-uno, .boton-libro-dos {
+                padding: 33rem 5rem;
+                width: 23rem;
+                text-align: center;
+                .img-nube {
+                    padding: 0;
+                    width: 60%;
+                }
             }
-            .h2-libro-uno {
-                grid-column-start: 2;
-                grid-row-start: 1;
-                
+            .boton-libro-dos {
+                padding-top: 45rem;
             }
-            .h2-libro-dos {
-                grid-row-start: 3;
-                padding-top: 4rem;
-            }
-            .img-libros {
-                width: 80%;
-                background-size: cover;
-                background-position: center;
-                margin-left: 5rem;
-                padding-bottom: 2rem;
-            }
-            .img-libro-uno {
-                grid-column-start: 1;        
-                grid-row: 1 / 3;
-            }
-            .img-libro-dos {
-                grid-row-start: 3;
-            }
-            .descripcion-libro-uno {
-                grid-column-start: 2;
-                grid-row-start: 2;
-            }
-            .descripcion-libro-dos {
-                grid-row-start: 4;
-                grid-column-start: 2;
-            }
-            .lista-libros {
-                padding-top: 2rem;
+                .h2-libro-uno, .h2-libro-dos {
+                    font-size: 2.5rem;
+                    letter-spacing: 3px;
+                }
+                .h2-libro-uno {
+                    grid-column: 2 / 4;
+                    grid-row-start: 1;
+                    
+                }
+                .h2-libro-dos {
+                    grid-column: 2/4;
+                    grid-row-start: 3;
+                    padding-top: 4rem;
+                }
+                .img-libros {
+                    width: 80%;
+                    background-size: cover;
+                    background-position: center;
+                    margin-left: 5rem;
+                    padding-bottom: 2rem;
+                }
+                .img-libro-uno {
+                    grid-column-start: 1;        
+                    grid-row: 1 / 3;
+                }
+                .img-libro-dos {
+                    grid-row-start: 3;
+                }
+                .descripcion-libro-uno {
+                    grid-column: 2/4;
+                    grid-row-start: 2;
+                    
+                }
+                .descripcion-libro-dos {
+                    grid-column: 2/4;
+                    grid-row-start: 4;
+                }
+                .boton-libro-uno {
+                    grid-column: 3;
+                    grid-row: 2;
+                }
+                .boton-libro-dos {
+                    grid-column: 3;
+                    grid-row: 4;
+                }
+                .lista-libros {
+                    padding-top: 2rem;
+                }
             }
         }
     }
-}
+
 
 
