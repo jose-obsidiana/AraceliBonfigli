@@ -112,14 +112,14 @@ main {
                 width: 27%;
                 position: fixed;
                 z-index: 0;
-                opacity: 0.8;
             }
             .png-siete, .png-nueve, .png-once {
                 display: none;
             }
             .png-ocho {
+                width: 24%;
                 right: 0rem;
-                top: 6rem;
+                top: 7rem;
             }
             .png-diez {
                 left: 1rem;
@@ -152,6 +152,23 @@ main {
     }
 }
 
+@media screen and (min-width:600px) { 
+    main {
+        .contenedor-png {
+            .png-cont {
+                width: 15%;
+            }
+            .png-diez {
+                left: 10rem;
+                top: 10rem;
+            }
+        }
+        #container {
+            margin: 9rem 10rem;
+        }
+    }
+}
+
 @media screen and (min-width:1024px) { 
     main {
         .contenedor-png {
@@ -166,9 +183,9 @@ main {
                 top: 12rem;
             }
             .png-ocho {
-                right: 10rem;
+                right: 7rem;
                 top: 15rem;
-                width: 10%;
+                width: 8%;
             }
             .png-nueve {
                 right: 30rem;
@@ -186,6 +203,7 @@ main {
         }
         #container {
             max-width: 768px;
+            margin: 9rem auto;
             .h2-contacto {
                 font-size: 3rem;
                 padding-top: 2rem;

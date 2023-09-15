@@ -5,7 +5,7 @@
   background-position: center; }
 
 main .contenedor-png .png-ocho, main .contenedor-png .png-dos {
-  animation: animacion 100s linear infinite; }
+  animation: animacion 70s linear infinite; }
 
 @keyframes animacion {
   0% {
@@ -215,11 +215,8 @@ header div a {
     color: #ff9f4c; }
 
 div .play {
-  width: 5%;
   position: relative;
-  left: 16rem;
-  top: 10rem;
-  animation: animacion-play 2s infinite 1s; }
+  animation: animacion-play 4s infinite 1s; }
 
 @keyframes animacion-play {
   0% {
@@ -270,6 +267,10 @@ footer, .index-footer {
       font-size: 2.3rem; }
     header div a, .contenedor div a {
       font-size: 1.5rem; }
+  div .play {
+    width: 10%;
+    left: 5rem;
+    top: 4rem; }
   footer, .footer {
     padding: 1rem 0 1rem 2rem; }
     footer nav ul, .footer nav ul {
@@ -342,6 +343,10 @@ footer, .index-footer {
         flex-direction: row;
         border-bottom: none;
         align-items: flex-end; }
+  div .play {
+    width: 5%;
+    left: 16rem;
+    top: 10rem; }
   footer nav ul, .index-footer nav ul, .footer nav ul {
     display: flex;
     flex-direction: row; }
@@ -364,7 +369,8 @@ main div img {
   width: 100%;
   object-fit: cover;
   padding: 2rem;
-  background-position: center; }
+  background-position: center;
+  margin-top: 0.3rem; }
 
 main div .descripcion {
   padding: 4rem; }
@@ -378,8 +384,6 @@ main div .descripcion {
     color: #6f5a96;
     font-weight: bold;
     padding: 0 0 1rem; }
-  main div .descripcion .album-fluir {
-    color: #198f7f; }
   main div .descripcion .lista-padding {
     padding-top: 2rem; }
 
@@ -390,8 +394,6 @@ main div .canciones {
     padding: 2rem 0.5rem;
     font-size: 2rem;
     color: #46669c; }
-  main div .canciones .h2-fluir {
-    color: #198f7f; }
   main div .canciones .ep {
     font-size: 2rem;
     color: #6f5a96; }
@@ -416,11 +418,15 @@ main div .canciones {
 @media screen and (min-width: 320px) {
   .header-pag {
     display: none; }
+  div .play-music {
+    position: fixed;
+    left: 80%;
+    top: 18rem; }
   main #discos {
     display: grid;
     grid-template-columns: 1fr; }
   main div .canciones {
-    padding: 0rem 4rem; }
+    padding: 0rem 3rem; }
     main div .canciones .lista-music {
       padding-bottom: 0; }
   main div .img-album {
@@ -437,7 +443,11 @@ main div .canciones {
   main div img {
     width: 89%; }
   main #discos {
-    margin: 2rem 6rem; } }
+    margin: 2rem 6rem; }
+  div .play-music {
+    width: 8%;
+    left: 75%;
+    top: 18rem; } }
 
 @media screen and (min-width: 1024px) {
   .header-pag {
@@ -450,7 +460,8 @@ main div .canciones {
     row-gap: 30rem;
     margin-bottom: 30rem; }
   main div img {
-    width: 100%; }
+    width: 100%;
+    margin-top: 0; }
   main div .descripcion .parrafo {
     display: block;
     font-size: 1.8rem; }
@@ -467,6 +478,11 @@ main div .canciones {
     font-size: 2.9rem;
     padding: 0;
     padding-bottom: 2rem; }
+  div .play-music {
+    width: 4%;
+    left: 87%;
+    top: 15rem;
+    position: relative; }
   .footer {
     padding: 2rem 4rem; } }
 
@@ -683,7 +699,7 @@ main div .h2-galeria {
   letter-spacing: 1.6px;
   padding-bottom: 0;
   margin-bottom: 0;
-  color: #2b4d7a; }
+  color: #474544; }
 
 main div .h3-gal {
   letter-spacing: 1px;
@@ -826,13 +842,13 @@ main #container {
   main .contenedor-png .png-cont {
     width: 27%;
     position: fixed;
-    z-index: 0;
-    opacity: 0.8; }
+    z-index: 0; }
   main .contenedor-png .png-siete, main .contenedor-png .png-nueve, main .contenedor-png .png-once {
     display: none; }
   main .contenedor-png .png-ocho {
+    width: 24%;
     right: 0rem;
-    top: 6rem; }
+    top: 7rem; }
   main .contenedor-png .png-diez {
     left: 1rem;
     top: 15rem; }
@@ -853,6 +869,15 @@ main #container {
         float: none;
         width: 100%; } }
 
+@media screen and (min-width: 600px) {
+  main .contenedor-png .png-cont {
+    width: 15%; }
+  main .contenedor-png .png-diez {
+    left: 10rem;
+    top: 10rem; }
+  main #container {
+    margin: 9rem 10rem; } }
+
 @media screen and (min-width: 1024px) {
   main .contenedor-png .png-cont {
     width: 8%; }
@@ -862,9 +887,9 @@ main #container {
     left: 10rem;
     top: 12rem; }
   main .contenedor-png .png-ocho {
-    right: 10rem;
+    right: 7rem;
     top: 15rem;
-    width: 10%; }
+    width: 8%; }
   main .contenedor-png .png-nueve {
     right: 30rem;
     top: 50rem; }
@@ -876,7 +901,8 @@ main #container {
     left: 30rem;
     bottom: 3rem; }
   main #container {
-    max-width: 768px; }
+    max-width: 768px;
+    margin: 9rem auto; }
     main #container .h2-contacto {
       font-size: 3rem;
       padding-top: 2rem; }
@@ -899,8 +925,7 @@ main #container {
 
 main .contenedor-png .png {
   position: fixed;
-  z-index: -2;
-  opacity: 0.7; }
+  z-index: -1; }
 
 main article div .p-padding, main .contenedor-sm div .p-padding {
   padding-top: 1rem; }
@@ -921,9 +946,8 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
     top: 5rem;
     left: 0; }
   main .contenedor-png .png-cuatro {
-    left: 26rem;
-    bottom: -3rem;
-    position: relative; }
+    right: 3rem;
+    bottom: 6rem; }
   main .contenedor-png .png-cinco {
     right: 35%;
     top: 41%; }
@@ -953,10 +977,6 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
 @media screen and (min-width: 600px) {
   main .contenedor-png .png {
     width: 22%; }
-  main .contenedor-png .png-cuatro {
-    left: 44rem;
-    bottom: -5rem;
-    position: relative; }
   main .contenedor-png .png-seis {
     right: 10rem;
     bottom: -2rem;
@@ -979,9 +999,7 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
     top: 9rem;
     left: 20rem; }
   main .contenedor-png .png-cuatro {
-    left: 130rem;
-    bottom: 5rem;
-    position: fixed; }
+    width: 10%; }
   main .contenedor-png .png-cinco {
     width: 10%;
     left: 90rem; }

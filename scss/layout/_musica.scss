@@ -23,13 +23,13 @@ main {
             object-fit: cover; 
             padding: 2rem;
             background-position: center;
+            margin-top: 0.3rem;
         }
     }
 
     div {
         .descripcion {
             padding: 4rem;
-
             .descripcion-album {
                 color: $azul-claro;
                 font-weight: bold;
@@ -42,9 +42,6 @@ main {
                 font-weight: bold;
                 padding: 0 0 1rem;
             }
-            .album-fluir {
-                color: $verde-agua;
-            }
             .lista-padding {
                 padding-top: 2rem;
             }
@@ -56,9 +53,6 @@ main {
             .h2-music {
                 padding: 2rem 0.5rem;
                 @include estilos(2rem, $azul-claro);
-            }
-            .h2-fluir {
-                color: $verde-agua;
             }
             .ep {
                 @include estilos(2rem, $violeta-claro);
@@ -81,7 +75,6 @@ main {
                         color: rgb(255, 245, 231);
                         background-color: $gris-oscuro;
                         border-radius: 8px;
-                        
                     }
                 }
             }
@@ -94,6 +87,14 @@ main {
         display: none;
     }
 
+    div {
+        .play-music {
+            position: fixed;
+            left: 80%;
+            top: 18rem;
+        }
+    }
+
     main {
         #discos {
             display: grid;
@@ -102,7 +103,7 @@ main {
             
         div {
             .canciones {
-                padding: 0rem 4rem;
+                padding: 0rem 3rem;
                 
                 .lista-music {
                     padding-bottom: 0;
@@ -136,6 +137,14 @@ main {
             margin: 2rem 6rem;
         }
     }
+
+    div {
+        .play-music {
+            width: 8%;
+            left: 75%;
+            top: 18rem;
+        }
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -153,6 +162,7 @@ main {
         div {
             img {
                 width: 100%;
+                margin-top: 0;
             }
             .descripcion {
                 .parrafo {
@@ -164,9 +174,7 @@ main {
                     font-size: 2rem;
                     padding-left: 0;
                 }
-
             }
-
             .canciones {
                 .h3-music {
                     padding-left: 0;
@@ -183,11 +191,19 @@ main {
             }
         }
     }
-
+    div {
+        .play-music {
+            width: 4%;
+            left: 87%;
+            top: 15rem;
+            position: relative;
+        }
+    }
     .footer {
         padding: 2rem 4rem;
     }
 }
+
 
 
 

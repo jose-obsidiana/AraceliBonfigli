@@ -37,13 +37,9 @@ header {
 
 div {
     .play {
-        width: 5%;
         position: relative;
-        left: 16rem;
-        top: 10rem;
-        animation: animacion-play 2s infinite 1s;
+        animation: animacion-play 4s infinite 1s;
     }
-
     @keyframes animacion-play {
         0% {
             transform: scale(1);
@@ -114,9 +110,15 @@ footer, .index-footer {
         }
         
     }
-    
-    
 
+    div {
+        .play {
+            width: 10%;
+            left: 5rem;
+            top: 4rem;
+        }
+    }
+    
     footer, .footer {
         padding: 1rem 0 1rem 2rem; 
         nav {
@@ -252,6 +254,14 @@ footer, .index-footer {
                     align-items: flex-end;
                 }
             }
+        }
+    }
+
+    div {
+        .play {
+            width: 5%;
+            left: 16rem;
+            top: 10rem;
         }
     }
 

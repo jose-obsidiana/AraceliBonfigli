@@ -4,8 +4,7 @@ main {
     .contenedor-png {
         .png {
             position: fixed;
-            z-index: -2;
-            opacity: 0.7;
+            z-index: -1;
         }
         .png-dos {
             @extend %keyframes;
@@ -44,9 +43,8 @@ main {
                 left: 0;
             } 
             .png-cuatro {
-                left: 26rem;
-                bottom: -3rem;
-                position: relative;
+                right: 3rem;
+                bottom: 6rem;
             }      
             .png-cinco {
                 right: 35%;
@@ -91,12 +89,7 @@ main {
         .contenedor-png {
             .png {
                 width: 22%;
-            }
-            .png-cuatro {
-                left: 44rem;
-                bottom: -5rem;
-                position: relative;
-            }      
+            }    
             .png-seis {
                 right: 10rem;
                 bottom: -2rem;
@@ -130,9 +123,8 @@ main {
                     left: 20rem;
                 } 
                 .png-cuatro {
-                    left: 130rem;
-                    bottom: 5rem;
-                    position: fixed;
+                    width: 10%;
+
                 }      
                 .png-cinco {
                     width: 10%;
