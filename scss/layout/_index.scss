@@ -114,7 +114,7 @@ footer, .index-footer {
     div {
         .play {
             width: 10%;
-            left: 5rem;
+            left: 10%;
             top: 4rem;
         }
     }
@@ -185,7 +185,6 @@ footer, .index-footer {
         .index-nombre {
             font-size: 5rem;
         }
-
         div {
             .araceli {
                 font-size: 3rem;
@@ -218,6 +217,11 @@ footer, .index-footer {
             }  
         }
 
+        div {
+            .play {
+                width: 8%;
+            }
+        }
 } 
 
 @media screen and (min-width:1024px) {
@@ -259,8 +263,8 @@ footer, .index-footer {
 
     div {
         .play {
-            width: 5%;
-            left: 16rem;
+            width: 4%;
+            left: 10%;
             top: 10rem;
         }
     }

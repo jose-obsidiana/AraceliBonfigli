@@ -115,8 +115,10 @@ main {
             @include grid(45% 25% 30%, 4% 42% 4% 42%);
 
             .boton-libro-uno, .boton-libro-dos {
-                padding: 33rem 5rem;
+                right: 20%;
+                top: 30%;
                 width: 23rem;
+                position: relative;
                 text-align: center;
                 .img-nube {
                     padding: 0;

@@ -269,7 +269,7 @@ footer, .index-footer {
       font-size: 1.5rem; }
   div .play {
     width: 10%;
-    left: 5rem;
+    left: 10%;
     top: 4rem; }
   footer, .footer {
     padding: 1rem 0 1rem 2rem; }
@@ -315,7 +315,9 @@ footer, .index-footer {
   footer nav ul div li img, .footer nav ul div li img {
     width: 40%; }
   footer div ul .info, .footer div ul .info {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  div .play {
+    width: 8%; } }
 
 @media screen and (min-width: 1024px) {
   .contenedor {
@@ -344,8 +346,8 @@ footer, .index-footer {
         border-bottom: none;
         align-items: flex-end; }
   div .play {
-    width: 5%;
-    left: 16rem;
+    width: 4%;
+    left: 10%;
     top: 10rem; }
   footer nav ul, .index-footer nav ul, .footer nav ul {
     display: flex;
@@ -650,8 +652,10 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
     grid-template-columns: 45% 25% 30%;
     grid-template-rows: 4% 42% 4% 42%; }
     main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
-      padding: 33rem 5rem;
+      right: 20%;
+      top: 30%;
       width: 23rem;
+      position: relative;
       text-align: center; }
       main .contenedor-libros .boton-libro-uno .img-nube, main .contenedor-libros .boton-libro-dos .img-nube {
         padding: 0;
