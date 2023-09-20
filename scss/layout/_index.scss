@@ -13,7 +13,6 @@ header {
         letter-spacing: 4px;
         text-transform: uppercase;
     }
-
     .text-shadow {
         ul {
             li {
@@ -35,8 +34,7 @@ header {
     }
 }
 
-div {
-    .play {
+    .play-img {
         position: relative;
         animation: animacion-play 4s infinite 1s;
     }
@@ -51,7 +49,7 @@ div {
             transform: scale(1);
         }
     }
-}
+
 
 footer, .index-footer {
     box-shadow: none;
@@ -61,14 +59,11 @@ footer, .index-footer {
     background-color: none;
 }
 
-
 @media screen and (min-width:320px) {
-
     header, .contenedor {
         @include flex;
         align-items: center;
         padding: 2rem 1rem;
-
         .index-nombre {
             font-size: 2rem;
             align-items: center;
@@ -76,7 +71,6 @@ footer, .index-footer {
             margin: 0 0.7rem;
             border-bottom: $gris-claro solid 2px;      
         }
-
         .navegacion {
             padding-top: 1rem;
         }
@@ -111,67 +105,15 @@ footer, .index-footer {
         
     }
 
-    div {
         .play {
-            width: 10%;
             left: 10%;
             top: 4rem;
-        }
-    }
-    
-    footer, .footer {
-        padding: 1rem 0 1rem 2rem; 
-        nav {
-            ul {
-                @include flex;
-                justify-content: space-between;
-
-                .iconos-music {
-                    @include flex-row;
-                    padding-bottom: 0.5rem;
-                    padding-left: 3rem;
-                }
-                .iconos-redes {
-                    @include flex-row;
-                    padding-left: 3rem;
-                }
-                div {
-                    li {
-                        .twitter {
-                            display: none;
-                        }
-                        img {
-                            width: 30%;
-                            &:hover {
-                                width: 50%;
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-
-        div {
-            ul {
-                .num-pad {
-                    width: 100%;
-                }
-                .map {
-                    width: 100%;
-                }
-                .info {
-                    font-size: 1.2rem;
-                }
-                li {
-                    img {
-                        width: 12%;
-                        margin-bottom: 0;
-                    }
+            a {
+                .play-img {
+                    width: 10%;
                 }
             }
         }
-    }
 }
 
 
@@ -180,7 +122,6 @@ footer, .index-footer {
     .imagen-body {
         background-image: url(../multimedia/8.webp);
     }
-
     header, .contenedor-index {
         .index-nombre {
             font-size: 5rem;
@@ -200,8 +141,10 @@ footer, .index-footer {
                 ul {
                     div {
                         li {
-                            img {
-                                width: 40%;
+                            article {
+                                img {
+                                    width: 40%;
+                                }
                             }
                         }
                     }
@@ -210,16 +153,20 @@ footer, .index-footer {
 
             div {
                 ul {
-                    .info {
-                        font-size: 1.6rem;
+                    li {
+                        .info {
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }  
         }
 
-        div {
-            .play {
-                width: 8%;
+        .play {
+            a {
+                .play-img {
+                    width: 8%;
+                }
             }
         }
 } 
@@ -232,12 +179,10 @@ footer, .index-footer {
         align-items: baseline;
         border-bottom: $gris-claro solid 1.5px;
         padding: 0.5rem 4rem;
-
         .index-nombre {
             border-bottom: none;
             letter-spacing: 7px;
-            }
-        
+        }
     }
     .contenedor-index {
         padding: 2rem 4rem;
@@ -261,13 +206,17 @@ footer, .index-footer {
         }
     }
 
-    div {
-        .play {
-            width: 4%;
-            left: 10%;
-            top: 10rem;
+
+    .play {
+        left: 10%;
+        top: 10rem;
+        a {
+            .play-img {
+                width: 4%;
+            }
         }
     }
+
 
     footer, .index-footer, .footer {
         nav {
@@ -283,7 +232,6 @@ footer, .index-footer {
         }
     }
 }
-
 
 @media screen and (min-width:1600px) {
     .imagen-body {

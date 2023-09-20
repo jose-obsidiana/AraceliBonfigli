@@ -52,7 +52,7 @@ main {
     main {
         .contenedor-libros {
             @include flex;
-            padding: 0 2.5rem;
+            @include margin-mobile;
 
                 .h2-libro-uno {
                     color: $azul-oscuro;
@@ -76,7 +76,7 @@ main {
                     }
                 
                 .boton-libro-uno, .boton-libro-dos {
-                    padding: 3rem 5rem;
+                    padding: 0 5rem 13rem;
                     width: 21rem;
                     text-align: center;
                     margin-left: 0;
@@ -96,9 +96,9 @@ main {
     @media screen and (min-width:600px) {
         main {
             .contenedor-libros {
+                @include margin-tablet;
                 .img-libros {
                     width: 70%;
-                    
                 }
                 .boton-libro-uno, .boton-libro-dos {
                     justify-content: center;
@@ -111,14 +111,14 @@ main {
 @media screen and (min-width:1024px) {
     main {
         .contenedor-libros {
-            margin: 0rem 12rem;
-            @include grid(45% 25% 30%, 4% 12% 30%  4% 18% 20% );
+            @include margin-desktop;
+            @include grid(40% 30% 30%, 4% 12% 30%  4% 18% 20% );
             row-gap: 2rem;
 
             .boton-libro-uno, .boton-libro-dos {
                 right: 20%;
                 width: 23rem;
-                margin-left: 0;
+                margin: 2rem 0;
                 justify-self: center;
 
                 .img-nube {
@@ -141,10 +141,9 @@ main {
                     padding-top: 4rem;
                 }
                 .img-libros {
-                    width: 80%;
+                    width: 90%;
                     background-size: cover;
                     background-position: center;
-                    margin-left: 5rem;
                     padding-bottom: 2rem;
                 }
                 .img-libro-uno {

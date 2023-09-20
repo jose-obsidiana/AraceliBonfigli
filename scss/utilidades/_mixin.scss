@@ -31,3 +31,15 @@
     flex-direction: row;
 }
 
+
+@mixin margin-mobile {
+    margin: 0 3rem;
+}
+@mixin margin-tablet {
+    margin: 0 13rem;
+}
+
+@mixin margin-desktop {
+    margin: 0 12rem;
+}
+

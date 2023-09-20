@@ -41,13 +41,15 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: #FFFFFF; }
   body ul {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
     list-style-type: none;
     margin-bottom: 0;
     font-family: 'Quicksand', sans-serif; }
     body ul li {
       font-size: 1.8rem;
-      padding-left: 0; }
+      padding: 0;
+      margin: 0; }
   body span {
     font-size: 1.8rem;
     font-weight: bold; }
@@ -76,7 +78,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   padding: 2rem 4rem; }
   .header-pag div .index-pag {
     color: #474544; }
@@ -122,6 +124,7 @@ footer, .footer {
   bottom: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-top: #797979 solid 1.5px;
   box-shadow: 0 0 5px 1px #797979;
   padding: 1rem 2rem; }
@@ -130,7 +133,7 @@ footer, .footer {
     padding: 0.5rem 0;
     margin-bottom: 0; }
     footer div ul .info:hover, .footer div ul .info:hover {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #797979; }
   footer div ul .num-pad, .footer div ul .num-pad {
     font-size: 1.2rem; }
@@ -146,6 +149,29 @@ footer, .footer {
   main h2 {
     font-size: 2rem;
     color: #46669c; }
+  footer, .footer {
+    padding: 1rem 0 1rem 2rem; }
+    footer nav ul, .footer nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      footer nav ul .iconos-music, .footer nav ul .iconos-music {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0.5rem;
+        padding-left: 3rem; }
+      footer nav ul .iconos-redes, .footer nav ul .iconos-redes {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3rem; }
+      footer nav ul div li article .twitter, .footer nav ul div li article .twitter {
+        display: none; }
+      footer nav ul div li article img, .footer nav ul div li article img {
+        width: 30%; }
+        footer nav ul div li article img:hover, .footer nav ul div li article img:hover {
+          width: 50%; }
+    footer div ul li .info, .footer div ul li .info {
+      font-size: 1.3rem; }
   /* propiedades bootstrap - header */
   #bootstrap nav .container-bt {
     padding: 2rem;
@@ -186,13 +212,13 @@ footer, .footer {
     display: none; }
   main h1 {
     font-size: 4rem;
-    margin: 10rem; }
+    margin: 12rem; }
   main h2 {
     font-size: 2.3rem; }
   main h3 {
     font-size: 1.8rem; }
   footer, .footer {
-    align-items: center; } }
+    padding: 2rem 4rem; } }
 
 .imagen-body {
   background-image: url(../multimedia/9.webp);
@@ -214,7 +240,7 @@ header div a {
   header div a:hover {
     color: #ff9f4c; }
 
-div .play {
+.play-img {
   position: relative;
   animation: animacion-play 4s infinite 1s; }
 
@@ -267,40 +293,11 @@ footer, .index-footer {
       font-size: 2.3rem; }
     header div a, .contenedor div a {
       font-size: 1.5rem; }
-  div .play {
-    width: 10%;
+  .play {
     left: 10%;
     top: 4rem; }
-  footer, .footer {
-    padding: 1rem 0 1rem 2rem; }
-    footer nav ul, .footer nav ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      footer nav ul .iconos-music, .footer nav ul .iconos-music {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0.5rem;
-        padding-left: 3rem; }
-      footer nav ul .iconos-redes, .footer nav ul .iconos-redes {
-        display: flex;
-        flex-direction: row;
-        padding-left: 3rem; }
-      footer nav ul div li .twitter, .footer nav ul div li .twitter {
-        display: none; }
-      footer nav ul div li img, .footer nav ul div li img {
-        width: 30%; }
-        footer nav ul div li img:hover, .footer nav ul div li img:hover {
-          width: 50%; }
-    footer div ul .num-pad, .footer div ul .num-pad {
-      width: 100%; }
-    footer div ul .map, .footer div ul .map {
-      width: 100%; }
-    footer div ul .info, .footer div ul .info {
-      font-size: 1.2rem; }
-    footer div ul li img, .footer div ul li img {
-      width: 12%;
-      margin-bottom: 0; } }
+    .play a .play-img {
+      width: 10%; } }
 
 /* mq tablet */
 @media screen and (min-width: 600px) {
@@ -312,11 +309,11 @@ footer, .index-footer {
     font-size: 3rem; }
   header div a, .contenedor-index div a {
     font-size: 1.7rem; }
-  footer nav ul div li img, .footer nav ul div li img {
+  footer nav ul div li article img, .footer nav ul div li article img {
     width: 40%; }
-  footer div ul .info, .footer div ul .info {
+  footer div ul li .info, .footer div ul li .info {
     font-size: 1.6rem; }
-  div .play {
+  .play a .play-img {
     width: 8%; } }
 
 @media screen and (min-width: 1024px) {
@@ -345,10 +342,11 @@ footer, .index-footer {
         flex-direction: row;
         border-bottom: none;
         align-items: flex-end; }
-  div .play {
-    width: 4%;
+  .play {
     left: 10%;
     top: 10rem; }
+    .play a .play-img {
+      width: 4%; }
   footer nav ul, .index-footer nav ul, .footer nav ul {
     display: flex;
     flex-direction: row; }
@@ -375,7 +373,7 @@ main div img {
   margin-top: 0.3rem; }
 
 main div .descripcion {
-  padding: 4rem; }
+  padding-left: 3rem; }
   main div .descripcion .descripcion-album {
     color: #46669c;
     font-weight: bold;
@@ -420,36 +418,43 @@ main div .canciones {
 @media screen and (min-width: 320px) {
   .header-pag {
     display: none; }
-  div .play-music {
+  .play-music {
     position: fixed;
     left: 80%;
     top: 18rem; }
+    .play-music a .play-img {
+      width: 40%; }
   main #discos {
     display: grid;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    margin: 0 3rem; }
   main div .canciones {
-    padding: 0rem 3rem; }
+    padding: 0; }
     main div .canciones .lista-music {
       padding-bottom: 0; }
   main div .img-album {
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    z-index: 1; }
   main div .descripcion {
-    padding-top: 0;
+    padding: 0 1rem;
     padding-bottom: 7rem; }
     main div .descripcion .parrafo {
       display: none; }
   main div img {
-    width: 85%; } }
+    width: 100%; } }
 
 @media screen and (min-width: 600px) {
   main div img {
-    width: 89%; }
+    width: 100%; }
   main #discos {
-    margin: 2rem 6rem; }
-  div .play-music {
-    width: 8%;
+    margin-top: 2rem;
+    margin: 0 13rem; }
+  .play-music {
     left: 75%;
-    top: 18rem; } }
+    top: 18rem; }
+    .play-music a .play-img {
+      width: 30%; } }
 
 @media screen and (min-width: 1024px) {
   .header-pag {
@@ -458,44 +463,44 @@ main div .canciones {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: repeat(4, 1fr);
-    margin: 2rem 7rem;
+    margin: 0 12rem;
     row-gap: 30rem;
     margin-bottom: 30rem; }
   main div img {
     width: 100%;
     margin-top: 0; }
-  main div .descripcion .parrafo {
-    display: block;
-    font-size: 1.8rem; }
-  main div .descripcion .descripcion-album, main div .descripcion .descripcion-ep {
-    padding-top: 2rem;
-    font-size: 2rem;
-    padding-left: 0; }
-  main div .canciones .h3-music {
-    padding-left: 0; }
-  main div .canciones .ep {
-    padding-top: 2rem;
-    padding-left: 0; }
-  main div .canciones .lista-music {
-    font-size: 2.9rem;
-    padding: 0;
-    padding-bottom: 2rem; }
-  div .play-music {
-    width: 4%;
+  main div .descripcion {
+    padding-left: 3rem; }
+    main div .descripcion .parrafo {
+      display: block;
+      font-size: 1.8rem; }
+    main div .descripcion .descripcion-album, main div .descripcion .descripcion-ep {
+      padding-top: 2rem;
+      font-size: 2rem; }
+  main div .canciones {
+    padding-right: 3rem; }
+    main div .canciones .h3-music {
+      padding-left: 0; }
+    main div .canciones .ep {
+      padding-top: 2rem;
+      padding-left: 0; }
+    main div .canciones .lista-music {
+      font-size: 2.9rem;
+      padding: 0;
+      padding-bottom: 2rem; }
+  .play-music {
     left: 87%;
-    top: 15rem;
-    position: relative; }
-  .footer {
-    padding: 2rem 4rem; } }
+    top: 20rem;
+    position: absolute; }
+    .play-music a .play-img {
+      width: 30%; } }
 
 main div .info-vid, main #contenedor-videos .info-vid {
-  margin-right: 12rem;
   border: #797979 2px solid;
-  width: 80%;
-  height: 57rem;
   padding: 1.5rem;
   margin-top: 8.4rem;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  overflow: auto; }
   main div .info-vid .lista-videos, main #contenedor-videos .info-vid .lista-videos {
     font-size: 18px;
     padding: 0;
@@ -528,48 +533,62 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
 @media screen and (min-width: 320px) {
   main #contenedor-videos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0 3rem; }
   main div .info-vid {
     display: none; }
   main div .h2-videos {
     margin-top: 0; }
   main div iframe {
-    width: 80%;
-    height: 45vw;
-    position: relative;
-    left: 10%; } }
+    width: 100%;
+    height: 47vw;
+    position: relative; } }
+
+@media screen and (min-width: 600px) {
+  main #contenedor-videos {
+    margin: 0 13rem; } }
 
 @media screen and (min-width: 1024px) {
   main #contenedor-videos {
+    margin: 0 12rem;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 52% 40%;
     grid-template-rows: repeat(5, 1fr);
-    padding-bottom: 10rem; }
+    column-gap: 8%;
+    row-gap: 3%;
+    max-height: 100%;
+    margin-bottom: 70rem; }
   main div .h2-videos {
     margin-top: 4rem; }
   main div .info-uno {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    margin-right: 10rem; }
+    grid-row: 1;
+    grid-column: 2; }
   main div .video-uno {
-    grid-row-start: 1;
-    grid-column-start: 1; }
-  main div .video-dos {
-    grid-row-start: 2;
-    grid-column-start: 1; }
+    grid-row: 1;
+    grid-column: 1; }
   main div .info-dos {
-    grid-row-start: 2;
-    grid-column-start: 2; }
+    grid-row: 2;
+    grid-column: 2; }
+  main div .video-dos {
+    grid-row: 2;
+    grid-column: 1; }
+  main div .info-tres {
+    grid-row: 3;
+    grid-column: 2; }
+  main div .video-tres {
+    grid-row: 3;
+    grid-column: 1; }
   main div .info-vid {
-    display: block; }
+    display: block;
+    width: 100%;
+    height: 75%; }
     main div .info-vid .lista-videos {
       font-size: 2.6rem; }
   main div iframe {
-    width: 73%;
+    width: 100%;
     height: 32vw;
     position: relative;
-    left: 15%;
-    right: 0%; } }
+    left: 0; } }
 
 main div .img-libros, main .contenedor-libros .img-libros {
   position: relative; }
@@ -611,7 +630,7 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
   main .contenedor-libros {
     display: flex;
     flex-direction: column;
-    padding: 0 2.5rem; }
+    margin: 0 3rem; }
     main .contenedor-libros .h2-libro-uno {
       color: #2b4d7a; }
     main .contenedor-libros .h2-libro-dos {
@@ -628,7 +647,7 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
     main .contenedor-libros .lista-libros {
       padding-bottom: 1rem; }
     main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
-      padding: 3rem 5rem;
+      padding: 0 5rem 13rem;
       width: 21rem;
       text-align: center;
       margin-left: 0; }
@@ -640,22 +659,24 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
         height: 3rem; } }
 
 @media screen and (min-width: 600px) {
-  main .contenedor-libros .img-libros {
-    width: 70%; }
-  main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
-    justify-content: center; } }
+  main .contenedor-libros {
+    margin: 0 13rem; }
+    main .contenedor-libros .img-libros {
+      width: 70%; }
+    main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
+      justify-content: center; } }
 
 @media screen and (min-width: 1024px) {
   main .contenedor-libros {
-    margin: 0rem 12rem;
+    margin: 0 12rem;
     display: grid;
-    grid-template-columns: 45% 25% 30%;
+    grid-template-columns: 40% 30% 30%;
     grid-template-rows: 4% 12% 30% 4% 18% 20%;
     row-gap: 2rem; }
     main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
       right: 20%;
       width: 23rem;
-      margin-left: 0;
+      margin: 2rem 0;
       justify-self: center; }
       main .contenedor-libros .boton-libro-uno .img-nube, main .contenedor-libros .boton-libro-dos .img-nube {
         padding: 0;
@@ -671,10 +692,9 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
       grid-row-start: 4;
       padding-top: 4rem; }
     main .contenedor-libros .img-libros {
-      width: 80%;
+      width: 90%;
       background-size: cover;
       background-position: center;
-      margin-left: 5rem;
       padding-bottom: 2rem; }
     main .contenedor-libros .img-libro-uno {
       grid-column-start: 1;
@@ -740,7 +760,8 @@ main div .img-bt {
 
 @media screen and (min-width: 600px) {
   main .gal-container {
-    margin-bottom: 5rem; }
+    margin: 0 13rem;
+    margin-bottom: 10rem; }
   main div .img-bt {
     width: 90%; }
   main div .img-vertical {
@@ -750,6 +771,7 @@ main div .img-bt {
   main .gal-container {
     display: flex;
     flex-direction: column;
+    margin: 0;
     margin-bottom: 15rem; }
   main div .img-bt {
     width: 55%; }
@@ -862,7 +884,8 @@ main #container {
     left: 1rem;
     top: 15rem; }
   main #container {
-    max-width: 90%; }
+    margin: 0 3rem;
+    max-width: 100%; }
     main #container .h2-contacto {
       font-size: 1.7rem;
       padding: 0.5rem;
@@ -885,7 +908,8 @@ main #container {
     left: 10rem;
     top: 10rem; }
   main #container {
-    margin: 9rem 10rem; } }
+    margin: 0 13rem;
+    margin-bottom: 10rem; } }
 
 @media screen and (min-width: 1024px) {
   main .contenedor-png .png-cont {
@@ -967,6 +991,7 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
   main article, main .contenedor-sm {
     display: flex;
     flex-direction: column;
+    margin: 0 3rem;
     margin-bottom: 10rem; }
     main article .img-sm, main .contenedor-sm .img-sm {
       width: 100%;
@@ -976,7 +1001,7 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
     main article .img-right, main article .mobile, main .contenedor-sm .img-right, main .contenedor-sm .mobile {
       display: none; }
     main article .p-sm, main .contenedor-sm .p-sm {
-      margin: 2rem 3rem;
+      margin-top: 2rem;
       position: relative;
       font-size: 1.5rem; }
     main article div .ul-pad, main article div .lista-sm, main .contenedor-sm div .ul-pad, main .contenedor-sm div .lista-sm {
@@ -993,10 +1018,7 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
   main article, main .contenedor-sm {
     display: flex;
     flex-direction: column;
-    padding: 0 10rem; }
-    main article .img-sm, main .contenedor-sm .img-sm {
-      width: 80%;
-      padding: 0 3%; } }
+    margin: 0 13rem; } }
 
 @media screen and (min-width: 1024px) {
   main .contenedor-png .png {
@@ -1019,7 +1041,8 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 40%;
-    margin: 15rem;
+    margin: 0 12rem;
+    margin-bottom: 20rem;
     row-gap: 10rem;
     padding: 0; }
     main article .p-right, main .contenedor-sm .p-right {

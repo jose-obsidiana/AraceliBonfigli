@@ -24,12 +24,13 @@ main {
             padding: 2rem;
             background-position: center;
             margin-top: 0.3rem;
+
         }
     }
 
     div {
         .descripcion {
-            padding: 4rem;
+            padding-left: 3rem;
             .descripcion-album {
                 color: $azul-claro;
                 font-weight: bold;
@@ -87,40 +88,46 @@ main {
         display: none;
     }
 
-    div {
         .play-music {
             position: fixed;
             left: 80%;
             top: 18rem;
+            a {
+                .play-img {
+                    width: 40%;
+                }
+            }
         }
-    }
+
 
     main {
         #discos {
             display: grid;
             grid-template-columns: 1fr; 
+            @include margin-mobile;
             }
             
         div {
             .canciones {
-                padding: 0rem 3rem;
-                
+                padding: 0;
                 .lista-music {
                     padding-bottom: 0;
                 }
             }
             .img-album {
                 text-align: center;
+                position: relative;
+                z-index: 1;
             }
             .descripcion {
-                padding-top: 0;
+                padding: 0 1rem;
                 padding-bottom: 7rem;
                 .parrafo {
                     display: none;
                 }
             }
             img {
-                width: 85%;     
+                width: 100%;     
             }
         }    
     }
@@ -130,21 +137,26 @@ main {
     main {
         div {
             img {
-                width: 89%;
+                width: 100%;
             }
         }
         #discos {
-            margin: 2rem 6rem;
+            margin-top: 2rem;
+            @include margin-tablet;
         }
     }
 
-    div {
+
         .play-music {
-            width: 8%;
             left: 75%;
             top: 18rem;
+            a {
+                .play-img {
+                    width: 30%;
+                }
+            }
         }
-    }
+
 }
 
 @media screen and (min-width:1024px) {
@@ -155,7 +167,7 @@ main {
     main {
         #discos {
             @include grid(30% 40% 30%, repeat(4, 1fr));
-            margin: 2rem 7rem;
+            @include margin-desktop;
             row-gap: 30rem;
             margin-bottom: 30rem;  
         }
@@ -165,6 +177,7 @@ main {
                 margin-top: 0;
             }
             .descripcion {
+                padding-left: 3rem;
                 .parrafo {
                     display: block;
                     font-size: 1.8rem;
@@ -172,10 +185,10 @@ main {
                 .descripcion-album, .descripcion-ep {
                     padding-top: 2rem;
                     font-size: 2rem;
-                    padding-left: 0;
                 }
             }
             .canciones {
+                padding-right: 3rem;
                 .h3-music {
                     padding-left: 0;
                 }
@@ -191,18 +204,18 @@ main {
             }
         }
     }
-    div {
+
         .play-music {
-            width: 4%;
             left: 87%;
-            top: 15rem;
-            position: relative;
+            top: 20rem;
+            position: absolute;
+            a {
+                .play-img {
+                    width: 30%;
+                }
+            }
         }
     }
-    .footer {
-        padding: 2rem 4rem;
-    }
-}
 
 
 

@@ -3,22 +3,24 @@
         color: $blanco;
 
         ul {
-            padding-left: 0;
+            padding: 0;
+            margin: 0;
             list-style-type: none;
             margin-bottom: 0;
             font-family: 'Quicksand', sans-serif;    
             li {
                 font-size: 1.8rem;
-                padding-left: 0;
+                padding: 0;
+                margin: 0;
             }
         }
+
         span {
             font-size: 1.8rem;
             font-weight: bold;
         }
         .text-shadow {
             text-shadow: 0 0 0 $gris-oscuro;
-
         }
         .img-border {
             padding: 0;
@@ -49,7 +51,7 @@
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         padding: 2rem 4rem;
         div {
             .index-pag {
@@ -113,6 +115,7 @@
         bottom: 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         border-top: $gris-claro solid 1.5px;
         box-shadow: 0 0 5px 1px $gris-claro;
         padding: 1rem 2rem;
@@ -123,7 +126,7 @@
                     padding: 0.5rem 0;
                     margin-bottom: 0;
                     &:hover { 
-                        @include estilos(2.5rem, $gris-claro);     
+                        @include estilos(2rem, $gris-claro);     
                     }
                 }
                 .num-pad {
@@ -132,7 +135,6 @@
             }
         }
     }
-
     .bg-footer {
         background-color: $bg-footer;
         color: $gris-oscuro;
@@ -147,6 +149,51 @@
                 @include estilos(2rem, $azul-claro);
             }
         }
+
+        footer, .footer {
+            padding: 1rem 0 1rem 2rem; 
+            nav {
+                ul {
+                    @include flex;
+                    justify-content: space-between;
+                    .iconos-music {
+                        @include flex-row;
+                        padding-bottom: 0.5rem;
+                        padding-left: 3rem;
+                    }
+                    .iconos-redes {
+                        @include flex-row;
+                        padding-left: 3rem;
+                    }
+                    div {
+                        li {
+                            article {
+                                .twitter {
+                                    display: none;
+                                }
+                                img {
+                                    width: 30%;
+                                    &:hover {
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div {
+                ul {
+                    li {
+                        .info {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
         /* propiedades bootstrap - header */
         #bootstrap {
             nav {
@@ -206,7 +253,7 @@
         main {
             h1 {
                 font-size: 4rem;
-                margin: 10rem;
+                margin: 12rem;
             }
             h2 {
                 font-size: 2.3rem;
@@ -218,7 +265,6 @@
         }
 
         footer, .footer {
-            align-items: center;
-
+            padding: 2rem 4rem;            
         }
     }

@@ -59,6 +59,7 @@ main {
 
         article, .contenedor-sm {
             @include flex;
+            @include margin-mobile;
             margin-bottom: 10rem;
             .img-sm {
                 width: 100%;
@@ -70,7 +71,7 @@ main {
                 display: none;
             }
             .p-sm {
-                margin: 2rem 3rem;
+                margin-top: 2rem;
                 position: relative;
                 font-size: 1.5rem;
             }
@@ -99,11 +100,7 @@ main {
 
         article, .contenedor-sm {
             @include flex;
-            padding: 0 10rem;
-            .img-sm {
-                width: 80%;
-                padding: 0 3%;
-            }
+            @include margin-tablet;
         }
     }
 }
@@ -138,7 +135,8 @@ main {
         
             article, .contenedor-sm {
                 @include grid(1fr 1fr, 1fr 40%);
-                margin: 15rem;
+                @include margin-desktop;
+                margin-bottom: 20rem;
                 row-gap: 10rem;
                 padding: 0;
 
