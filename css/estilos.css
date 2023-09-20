@@ -207,6 +207,12 @@ footer, .footer {
       width: 1.7rem;
       height: 1.7rem; } }
 
+@media screen and (min-width: 600px) {
+  footer nav ul div li article img, .footer nav ul div li article img {
+    width: 40%; }
+  footer div ul li .info, .footer div ul li .info {
+    font-size: 1.6rem; } }
+
 @media screen and (min-width: 1024px) {
   .header-bt {
     display: none; }
@@ -216,9 +222,7 @@ footer, .footer {
   main h2 {
     font-size: 2.3rem; }
   main h3 {
-    font-size: 1.8rem; }
-  footer, .footer {
-    padding: 2rem 4rem; } }
+    font-size: 1.8rem; } }
 
 .imagen-body {
   background-image: url(../multimedia/9.webp);

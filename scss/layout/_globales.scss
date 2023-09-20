@@ -245,6 +245,33 @@
         }
     }
 
+@media screen and (min-width:600px) {
+    footer, .footer {
+        nav {
+            ul {
+                div {
+                    li {
+                        article {
+                            img {
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div {
+            ul {
+                li {
+                    .info {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }  
+    }
+}
+
     @media screen and (min-width:1024px) {
         .header-bt {
             display: none;
@@ -262,9 +289,5 @@
                 font-size: 1.8rem;
                 
             }
-        }
-
-        footer, .footer {
-            padding: 2rem 4rem;            
         }
     }
