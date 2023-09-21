@@ -197,7 +197,7 @@ footer, .footer {
 footer, .index-footer {
   box-shadow: none;
   color: #FFFFFF;
-  padding: 2rem 3rem;
+  padding: 2rem;
   position: absolute;
   background-color: none; }
 
@@ -428,7 +428,7 @@ main div .canciones {
   main #discos {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 3rem; }
+    margin: 0 2rem; }
   main div .canciones {
     padding: 0; }
     main div .canciones .lista-music {
@@ -537,7 +537,7 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
   main #contenedor-videos {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem; }
+    margin: 0 2rem; }
   main div .info-vid {
     display: none; }
   main div .h2-videos {
@@ -633,7 +633,7 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
   main .contenedor-libros {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem; }
+    margin: 0 2rem; }
     main .contenedor-libros .h2-libro-uno {
       color: #2b4d7a; }
     main .contenedor-libros .h2-libro-dos {
@@ -896,7 +896,8 @@ main #container {
     left: 1rem;
     top: 15rem; }
   main #container {
-    margin: 0 3rem;
+    margin: 0 2rem;
+    margin-bottom: 10rem;
     max-width: 100%; }
     main #container .h2-contacto {
       font-size: 1.7rem;
@@ -1003,7 +1004,7 @@ main article div ul .lista-sm, main .contenedor-sm div ul .lista-sm {
   main article, main .contenedor-sm {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 0 2rem;
     margin-bottom: 10rem; }
     main article .img-sm, main .contenedor-sm .img-sm {
       width: 100%;

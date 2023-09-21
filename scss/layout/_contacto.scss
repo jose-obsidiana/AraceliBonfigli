@@ -127,6 +127,7 @@ main {
         }
         #container {
             @include margin-mobile;
+            margin-bottom: 10rem;
             max-width: 100%;
             .h2-contacto {
                 font-size: 1.7rem;
