@@ -97,10 +97,10 @@ main {
                 position: relative;
             }
         }
-
         article, .contenedor-sm {
             @include flex;
             @include margin-tablet;
+            margin-bottom: 10rem;
         }
     }
 }
@@ -121,7 +121,6 @@ main {
                 } 
                 .png-cuatro {
                     width: 10%;
-
                 }      
                 .png-cinco {
                     width: 10%;
@@ -145,6 +144,7 @@ main {
                     grid-column-start: 2;
                     grid-row: 1;
                     margin: 0;
+                    padding-left: 2rem;
                 }
                 .p-left {
                     padding-right: 2rem;

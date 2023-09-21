@@ -34,8 +34,7 @@ main {
                 letter-spacing: 2px;
                 font-weight: 500;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                width: 95%;
-                height: 4rem;
+                @include width-height(95%, 4rem);
                 color: $gris-oscuro;
                 background-color: #cfcfcf;
                 border: 1px solid $gris-oscuro;
@@ -71,9 +70,9 @@ main {
                     background-position: center;
                     object-fit: cover;     
                 }
-                    .lista-libros {
-                        padding-bottom: 1rem;
-                    }
+                .lista-libros {
+                    padding-bottom: 1rem;
+                }
                 
                 .boton-libro-uno, .boton-libro-dos {
                     padding: 0 5rem 13rem;
@@ -112,7 +111,7 @@ main {
     main {
         .contenedor-libros {
             @include margin-desktop;
-            @include grid(40% 30% 30%, 4% 12% 30%  4% 18% 20% );
+            @include grid(40% 30% 30%, 4% 12% 30%  4% 18% 20%);
             row-gap: 2rem;
 
             .boton-libro-uno, .boton-libro-dos {
@@ -141,7 +140,7 @@ main {
                     padding-top: 4rem;
                 }
                 .img-libros {
-                    width: 90%;
+                    width: 93%;
                     background-size: cover;
                     background-position: center;
                     padding-bottom: 2rem;
@@ -184,6 +183,3 @@ main {
             }
         }
     }
-
-
-

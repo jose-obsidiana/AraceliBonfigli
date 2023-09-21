@@ -24,7 +24,6 @@ main {
             padding: 2rem;
             background-position: center;
             margin-top: 0.3rem;
-
         }
     }
 
@@ -69,7 +68,6 @@ main {
                 font-family: Arial, Helvetica, sans-serif;
                 letter-spacing: 0.2px;
                 font-size: 2.7rem;
-                padding-left: 0;
                 .li-pad {
                     padding: 0.3rem 0.5rem;
                     &:hover {
@@ -98,7 +96,6 @@ main {
                 }
             }
         }
-
 
     main {
         #discos {
@@ -146,17 +143,15 @@ main {
         }
     }
 
-
-        .play-music {
-            left: 75%;
-            top: 18rem;
-            a {
-                .play-img {
-                    width: 30%;
-                }
+    .play-music {
+        left: 75%;
+        top: 18rem;
+        a {
+            .play-img {
+                width: 30%;
             }
         }
-
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -168,7 +163,7 @@ main {
         #discos {
             @include grid(30% 40% 30%, repeat(4, 1fr));
             @include margin-desktop;
-            row-gap: 30rem;
+            row-gap: 25rem;
             margin-bottom: 30rem;  
         }
         div {
@@ -205,17 +200,17 @@ main {
         }
     }
 
-        .play-music {
-            left: 87%;
-            top: 20rem;
-            position: absolute;
-            a {
-                .play-img {
-                    width: 30%;
-                }
+    .play-music {
+        left: 87%;
+        top: 20rem;
+        position: absolute;
+        a {
+            .play-img {
+                width: 30%;
             }
         }
     }
+}
 
 
 

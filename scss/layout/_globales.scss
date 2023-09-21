@@ -5,13 +5,13 @@
         ul {
             padding: 0;
             margin: 0;
-            list-style-type: none;
-            margin-bottom: 0;
-            font-family: 'Quicksand', sans-serif;    
             li {
                 font-size: 1.8rem;
-                padding: 0;
-                margin: 0;
+                list-style-type: none;
+                text-shadow: 0 0 0 $gris-oscuro;
+                a {
+                    text-shadow: none;
+                }
             }
         }
 
@@ -20,7 +20,6 @@
             font-weight: bold;
         }
         .text-shadow {
-            text-shadow: 0 0 0 $gris-oscuro;
         }
         .img-border {
             padding: 0;
@@ -44,9 +43,8 @@
     .header-pag {
         padding: 3rem;
         border-bottom: $border-bottom solid 1.5px;
-        box-shadow: 0 0 5px 2px $border-bottom;
+        box-shadow: 0 0 5px 1px $gris-claro;
         background-color: $bg-header;
-
         position: sticky;
         top: 0;
         right: 0;
@@ -105,39 +103,11 @@
                 @include estilos(1.8rem, $gris-oscuro);
                 letter-spacing: 0.2px;
                 font-weight: 500;
+                text-shadow: 0 0 0 $gris-oscuro;
+
+
             }
         }
-    }
-    
-    footer, .footer {
-        position: relative;
-        width: 100%;
-        bottom: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: $gris-claro solid 1.5px;
-        box-shadow: 0 0 5px 1px $gris-claro;
-        padding: 1rem 2rem;
-        div {
-            ul {
-                .info {
-                    font-weight: bold;
-                    padding: 0.5rem 0;
-                    margin-bottom: 0;
-                    &:hover { 
-                        @include estilos(2rem, $gris-claro);     
-                    }
-                }
-                .num-pad {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
-    .bg-footer {
-        background-color: $bg-footer;
-        color: $gris-oscuro;
     }
 
     @media screen and (min-width:320px) {
@@ -149,49 +119,7 @@
                 @include estilos(2rem, $azul-claro);
             }
         }
-
-        footer, .footer {
-            padding: 1rem 0 1rem 2rem; 
-            nav {
-                ul {
-                    @include flex;
-                    justify-content: space-between;
-                    .iconos-music {
-                        @include flex-row;
-                        padding-bottom: 0.5rem;
-                        padding-left: 3rem;
-                    }
-                    .iconos-redes {
-                        @include flex-row;
-                        padding-left: 3rem;
-                    }
-                    div {
-                        li {
-                            article {
-                                .twitter {
-                                    display: none;
-                                }
-                                img {
-                                    width: 30%;
-                                    &:hover {
-                                        width: 50%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            div {
-                ul {
-                    li {
-                        .info {
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-            }
-        }
+    }
 
 
         /* propiedades bootstrap - header */
@@ -199,25 +127,23 @@
             nav {
                 .container-bt {
                     padding: 2rem;
-                    padding-right: 1.5rem;     
                     background-color: $bg-header;
                     position: fixed;
                     top: 0;
                     border-bottom: $border-bottom solid 0.5px;
                     box-shadow: 0 0 5px $border-bottom;
-
                     .bg-bt {
                         background: rgb(255,233,214);
                         background: linear-gradient(180deg, rgba(253, 236, 221, 0.947) 34%, rgba(207, 226, 254, 0.932) 100%);
                     }
                     .araceli-bt {
                         @include estilos(2rem, $gris-oscuro);
-                        padding-left: 0.5rem;
                         font-family: 'Montserrat', Arial, sans-serif;
                         font-weight: 700;
                         letter-spacing: 5px;
                         text-transform: uppercase;  
                         border-bottom: none;
+                        margin: 0;
                             &:hover {
                                 color: $gris-claro;
                             }
@@ -243,40 +169,12 @@
                 }
             }
         }
-    }
-
-@media screen and (min-width:600px) {
-    footer, .footer {
-        nav {
-            ul {
-                div {
-                    li {
-                        article {
-                            img {
-                                width: 40%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        div {
-            ul {
-                li {
-                    .info {
-                        font-size: 1.6rem;
-                    }
-                }
-            }
-        }  
-    }
-}
+    
 
     @media screen and (min-width:1024px) {
         .header-bt {
             display: none;
         }
-
         main {
             h1 {
                 font-size: 4rem;

@@ -50,19 +50,9 @@ header {
         }
     }
 
-
-footer, .index-footer {
-    box-shadow: none;
-    color: $blanco;
-    padding: 2rem 4rem;
-    position: absolute;
-    background-color: none;
-}
-
 @media screen and (min-width:320px) {
     header, .contenedor {
-        @include flex;
-        align-items: center;
+        @include flex-container (column, center, center);
         padding: 2rem 1rem;
         .index-nombre {
             font-size: 2rem;
@@ -105,17 +95,17 @@ footer, .index-footer {
         
     }
 
-        .play {
-            left: 10%;
-            top: 4rem;
-            a {
-                .play-img {
-                    width: 10%;
-                }
+    .play {
+        position: absolute;
+        left: 10%;
+        top: 20rem;
+        a {
+            .play-img {
+                width: 17%;
             }
         }
+    }
 }
-
 
 /* mq tablet */
 @media screen and (min-width:600px) {
@@ -136,47 +126,20 @@ footer, .index-footer {
         }
     }
 
-    footer, .footer {
-            nav {
-                ul {
-                    div {
-                        li {
-                            article {
-                                img {
-                                    width: 40%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            div {
-                ul {
-                    li {
-                        .info {
-                            font-size: 1.6rem;
-                        }
-                    }
-                }
-            }  
-        }
-
-        .play {
-            a {
-                .play-img {
-                    width: 8%;
-                }
+    .play {
+        left: 8%;
+        top: 20rem;
+        a {
+            .play-img {
+                width: 25%;
             }
         }
+    }
 } 
 
 @media screen and (min-width:1024px) {
-
     .contenedor {
-        @include flex-row;
-        justify-content: space-between;
-        align-items: baseline;
+        @include flex-container (row, space-between, baseline);
         border-bottom: $gris-claro solid 1.5px;
         padding: 0.5rem 4rem;
         .index-nombre {
@@ -198,36 +161,19 @@ footer, .index-footer {
                     padding: 0rem 2rem;
                 }
                 .nav-uno, .nav-dos {
-                    @include flex-row;
+                    @include flex-container(row, end, flex-end);
                     border-bottom: none;
-                    align-items: flex-end;
                 }
             }
         }
     }
-
 
     .play {
-        left: 10%;
-        top: 10rem;
+        left: 13%;
+        top: 18rem;
         a {
             .play-img {
-                width: 4%;
-            }
-        }
-    }
-
-
-    footer, .index-footer, .footer {
-        nav {
-            ul {            
-                @include flex-row;
-            .iconos-redes {
-                padding-left: 0rem;
-                }
-            .twitter {
-                display: flex;
-                }
+                width: 25%;
             }
         }
     }
