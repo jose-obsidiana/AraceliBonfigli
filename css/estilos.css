@@ -215,7 +215,7 @@ footer, .index-footer {
       display: flex;
       flex-direction: row; }
     footer nav ul div li img, .footer nav ul div li img {
-      width: 30%; }
+      width: 35%; }
       footer nav ul div li img:hover, .footer nav ul div li img:hover {
         width: 50%; }
   footer div ul .info, .footer div ul .info {
@@ -544,7 +544,7 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
     margin-top: 0; }
   main div iframe {
     width: 100%;
-    height: 47vw;
+    height: 50vw;
     position: relative; } }
 
 @media screen and (min-width: 600px) {
