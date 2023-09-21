@@ -106,25 +106,6 @@ main {
 
 @media screen and (min-width:320px) { 
     main {
-        .contenedor-png {
-            .png-cont {
-                width: 27%;
-                position: fixed;
-                z-index: 0;
-            }
-            .png-siete, .png-nueve, .png-once {
-                display: none;
-            }
-            .png-ocho {
-                width: 24%;
-                right: 0rem;
-                top: 7rem;
-            }
-            .png-diez {
-                left: 1rem;
-                top: 15rem;
-            }
-        }
         #container {
             @include margin-mobile;
             margin-bottom: 10rem;
@@ -154,15 +135,6 @@ main {
 
 @media screen and (min-width:600px) { 
     main {
-        .contenedor-png {
-            .png-cont {
-                width: 15%;
-            }
-            .png-diez {
-                left: 10rem;
-                top: 10rem;
-            }
-        }
         #container {
             @include margin-tablet;
             margin-bottom: 10rem;
@@ -172,36 +144,6 @@ main {
 
 @media screen and (min-width:1024px) { 
     main {
-        .contenedor-png {
-            .png-cont {
-                width: 8%;
-            }
-            .png-siete, .png-nueve, .png-once {
-                display: block;
-            }
-            .png-siete {
-                left: 10rem;
-                top: 12rem;
-            }
-            .png-ocho {
-                right: 7rem;
-                top: 15rem;
-                width: 8%;
-            }
-            .png-nueve {
-                right: 30rem;
-                top: 50rem;
-            }
-            .png-diez {
-                left: 70rem;
-                top: 20rem;
-                width: 7%;
-            }
-            .png-once {
-                left: 30rem;
-                bottom: 3rem;
-            }
-        }
         #container {
             max-width: 768px;
             margin: 9rem auto;
