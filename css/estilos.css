@@ -409,7 +409,7 @@ header div a {
     left: 10%;
     top: 20rem; }
     .play a .play-img {
-      width: 17%; } }
+      width: 15%; } }
 
 /* mq tablet */
 @media screen and (min-width: 600px) {
@@ -425,7 +425,7 @@ header div a {
     left: 8%;
     top: 20rem; }
     .play a .play-img {
-      width: 25%; } }
+      width: 22%; } }
 
 @media screen and (min-width: 1024px) {
   .contenedor {
@@ -558,7 +558,7 @@ main div .canciones {
     left: 75%;
     top: 18rem; }
     .play-music a .play-img {
-      width: 30%; } }
+      width: 25%; } }
 
 @media screen and (min-width: 1024px) {
   .header-pag {
@@ -597,10 +597,10 @@ main div .canciones {
     top: 20rem;
     position: absolute; }
     .play-music a .play-img {
-      width: 30%; } }
+      width: 25%; } }
 
 main div .info-vid, main #contenedor-videos .info-vid {
-  border: #797979 2px solid;
+  box-shadow: 0px 0px 6px 0px #797979;
   padding: 1.5rem;
   margin-top: 8.4rem;
   font-size: 0.7rem;
@@ -648,7 +648,8 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
   main div iframe {
     width: 100%;
     height: 50vw;
-    position: relative; } }
+    position: relative;
+    box-shadow: 0px 0px 6px 0px #797979; } }
 
 @media screen and (min-width: 600px) {
   main #contenedor-videos {
@@ -687,7 +688,7 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
   main div .info-vid {
     display: block;
     width: 100%;
-    height: 75%; }
+    height: 74%; }
     main div .info-vid .lista-videos {
       font-size: 2.6rem; }
   main div iframe {
@@ -845,7 +846,7 @@ main div .img-bt {
   padding: 0; }
 
 .play-music a .play-ig {
-  width: 32%; }
+  width: 20%; }
 
 @media screen and (min-width: 320px) {
   main .gal-container {
@@ -876,7 +877,8 @@ main div .img-bt {
   main div .img-vertical {
     width: 70%; }
   .play-music a .play-ig {
-    width: 13%; } }
+    width: 13%;
+    left: 10%; } }
 
 @media screen and (min-width: 1024px) {
   main .gal-container {
@@ -893,9 +895,9 @@ main div .img-bt {
   main div .boton-next {
     right: 20%; }
   .play-music a .play-ig {
-    width: 20%;
-    right: 100%;
-    top: 2.5rem; } }
+    width: 15%;
+    top: 2rem;
+    left: 0%; } }
 
 .body-contacto {
   background: #fdeddf;

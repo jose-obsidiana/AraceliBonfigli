@@ -3,7 +3,7 @@
 main {
     div, #contenedor-videos {
         .info-vid {
-            border: $gris-claro 2px solid;
+            box-shadow: 0px 0px 6px 0px $gris-claro;
             padding: 1.5rem;
             margin-top: 8.4rem;
             font-size: 0.7rem;
@@ -66,6 +66,7 @@ main {
             iframe {
                 @include width-height (100%, 50vw);
                 position: relative;
+                box-shadow: 0px 0px 6px 0px $gris-claro;
             }
         }     
     }
@@ -121,7 +122,7 @@ main {
 
             .info-vid {
                 display: block;
-                @include width-height (100%, 75%);
+                @include width-height (100%, 74%);
                 .lista-videos {
                     font-size: 2.6rem;
                 }
