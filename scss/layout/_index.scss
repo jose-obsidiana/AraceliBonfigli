@@ -6,7 +6,7 @@ body, html{
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.body-index::-webkit-scrollbar {
+#body-index::-webkit-scrollbar {
     display: none;
     }
 
@@ -62,6 +62,8 @@ body {
         font-size: 2rem;
     }
 
+
+
         .play-img {
             animation: animacion-play 4s infinite 1s;
         }
@@ -76,5 +78,3 @@ body {
                 transform: scale(1);
             }
         }
-
-
