@@ -8,6 +8,7 @@ footer, .footer {
     align-items: end;
     border-top: $border-bottom solid 1.5px;
     box-shadow: 0 0 5px 1px $gris-claro;
+    
     div {
         ul {
             .info {
@@ -15,6 +16,12 @@ footer, .footer {
                 margin-bottom: 0;
                 &:hover { 
                     @include estilos(2rem, $gris-claro);     
+                }
+                .icon-dos {
+                    width: 10%;
+                }
+                .icon-tres {
+                    width: 12%;
                 }
             }
             .num-pad {
