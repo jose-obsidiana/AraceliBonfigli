@@ -60,20 +60,22 @@ button.onclick = () => {mensajeEnviado()} */
 
 
 // ENVIAR FORMULARIO
-/*
-let formulario = document.getElementById("contact_form")
 
-formulario.addEventListener("submit", function(event) {
+// let formulario = document.getElementById("contact_form")
 
-event.preventDefault() // detiene el envio
+// formulario.addEventListener("submit", function(event) {
 
-    if (event.target.value === null) {
-        alert('Te faltaron datos')
-    }
+// event.preventDefault() // detiene el envio
 
-    else {
-        alert('Tu mensaje ha sido enviado!')
-    }
-})
- */
+//     if (event.target.value === null) {
+//         alert('Te faltaron datos')
+//     }
+
+//     else {
+//         alert('Tu mensaje ha sido enviado!')
+//     }
+// })
+
+
+
 

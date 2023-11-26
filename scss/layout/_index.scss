@@ -32,10 +32,12 @@ body {
         top: 0;
         z-index: 0;
     }
+
+    
     
     .btn {
         position: fixed;
-        bottom: 5%;
+        bottom: 90%;
         right: 0px;
         transform: translateX(-50%);
         border: 1px solid #fff;
@@ -50,17 +52,21 @@ body {
         transition: all .3s;
         z-index: 11;
         &:hover {
-            background: #ffffff;
-            color: #1B1734;
+                background: #ffffff;
+                color: #1B1734;
+            }
         }
-    }
+  
+
     
     .btn_works {
-        left: 100px;
+        left: 37%;
         right: unset;
         text-decoration: none;
         font-size: 2rem;
     }
+
+
 
 
 
@@ -78,3 +84,18 @@ body {
                 transform: scale(1);
             }
         }
+
+
+@media screen and (min-width:1024px) {
+
+    .btn {
+        position: fixed;
+        bottom: 5%;
+
+    }
+
+    .btn_works {
+        left: 100px;
+
+    }
+}

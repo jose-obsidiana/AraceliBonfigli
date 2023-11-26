@@ -31,8 +31,8 @@
     } 
 
     .bg-body {
-        background: rgb(255,233,214);
-        background: linear-gradient(180deg, rgba(253, 236, 221, 0.947) 34%, rgba(207, 226, 254, 0.932) 100%);
+        background: rgb(252, 227, 204);
+        background: linear-gradient(180deg, rgba(255, 233, 214, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
         @extend %img-propiedades;
         background-attachment: fixed;
         color: $gris-oscuro; 

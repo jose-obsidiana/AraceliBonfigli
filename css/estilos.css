@@ -164,8 +164,8 @@ body {
       filter: grayscale(30%); }
 
 .bg-body {
-  background: #ffe9d6;
-  background: linear-gradient(180deg, rgba(253, 236, 221, 0.947) 34%, rgba(207, 226, 254, 0.932) 100%);
+  background: #fce3cc;
+  background: linear-gradient(180deg, rgba(255, 233, 214, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
   background-attachment: fixed;
   color: #474544; }
 
@@ -173,7 +173,7 @@ body {
   padding: 3rem;
   border-bottom: #929292 solid 1.5px;
   box-shadow: 0 0 5px 1px #797979;
-  background-color: #fce4ce;
+  background-color: #FCDFC4;
   position: sticky;
   top: 0;
   right: 0;
@@ -230,7 +230,7 @@ main div p {
 /* propiedades bootstrap - header */
 #bootstrap nav .container-bt {
   padding: 2rem;
-  background-color: #fce4ce;
+  background-color: #FCDFC4;
   position: fixed;
   top: 0;
   border-bottom: #929292 solid 0.5px;
@@ -298,7 +298,7 @@ footer, .footer {
     text-align: right; }
 
 .bg-footer {
-  background-color: #D7E5FB;
+  background-color: #D7D9FA;
   color: #474544; }
 
 footer, .index-footer {
@@ -903,10 +903,6 @@ main div .img-bt {
     top: 2rem;
     left: 0%; } }
 
-.body-contacto {
-  background: #fdeddf;
-  background: linear-gradient(180deg, #fdeddf 34%, #dae7fc 100%); }
-
 main .contenedor-png {
   position: fixed;
   z-index: -2;
@@ -988,7 +984,7 @@ main #container {
     text-transform: uppercase; }
     main #container form div #form_button:hover {
       background: #474544;
-      color: #fce4ce; }
+      color: #FCDFC4; }
 
 @media screen and (min-width: 320px) {
   main #container {
@@ -1147,7 +1143,7 @@ svg {
 
 .btn {
   position: fixed;
-  bottom: 5%;
+  bottom: 90%;
   right: 0px;
   transform: translateX(-50%);
   border: 1px solid #fff;
@@ -1166,7 +1162,7 @@ svg {
     color: #1B1734; }
 
 .btn_works {
-  left: 100px;
+  left: 37%;
   right: unset;
   text-decoration: none;
   font-size: 2rem; }
@@ -1181,3 +1177,10 @@ svg {
     transform: scale(1.5); }
   100% {
     transform: scale(1); } }
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    position: fixed;
+    bottom: 5%; }
+  .btn_works {
+    left: 100px; } }
