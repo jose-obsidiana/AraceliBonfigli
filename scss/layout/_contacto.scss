@@ -13,13 +13,13 @@ main {
 
     #container {
         border: $gris-oscuro solid 3px;
-        max-width: 768px;
+        max-width: 468px;
         margin: 9rem auto;
         position: relative;
         background-color: #eaeaea;
 
         .h2-contacto {
-            @include estilos(3rem, $gris-oscuro);
+            @include estilos(2.8rem, $gris-oscuro);
             font-weight: 700;
             letter-spacing: 5px;
             text-align: center;
@@ -37,7 +37,7 @@ main {
             border-bottom: solid 2px $gris-oscuro;
             margin: 1rem auto;
             width: 20rem;
-            margin-bottom: 10rem;
+            margin-bottom: 8rem;
         }
 
         form {
@@ -66,7 +66,7 @@ main {
                     background: none;
                     border: none;
                     border-bottom: solid 2px $gris-oscuro;
-                    @include estilos(1.7rem, $gris-oscuro);
+                    @include estilos(1.5rem, $gris-oscuro);
                     font-weight: 400;
                     letter-spacing: 1px;  
                     margin: 0 0 1.8rem 0;
@@ -144,19 +144,19 @@ main {
             max-width: 768px;
             margin: 9rem auto 20rem;
             .h2-contacto {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 padding-top: 2rem;
             }        
             .h3-contacto {
                 font-size: 2.5rem;
             }
             .underline {
-                margin-bottom: 10rem;
+                margin-bottom: 8rem;
             }
         
             form {
                 padding: 38px;
-                margin: 5rem 0;
+                margin: 5rem 0 0 0;
                 .nombre, .telefono {
                     float: left;
                     width: 45%;

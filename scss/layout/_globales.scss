@@ -6,7 +6,7 @@
             padding: 0;
             margin: 0;
             li {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 list-style-type: none;
                 text-shadow: 0 0 0 $gris-oscuro;
                 a {
@@ -16,7 +16,7 @@
         }
 
         span {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: bold;
         }
         .img-border {
@@ -101,7 +101,7 @@
             }
             p {
                 font-family: 'Quicksand', sans-serif;
-                @include estilos(1.8rem, $gris-oscuro);
+                @include estilos(1.6rem, $gris-oscuro);
                 letter-spacing: 0.2px;
                 font-weight: 500;
                 text-shadow: 0 0 0 $gris-oscuro;

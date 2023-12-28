@@ -70,6 +70,7 @@ main {
                 font-size: 2.7rem;
                 .li-pad {
                     padding: 0.3rem 0.5rem;
+                    font-size: 1.8rem;
                     &:hover {
                         color: rgb(255, 245, 231);
                         background-color: $gris-oscuro;
@@ -175,7 +176,12 @@ main {
                 padding-left: 3rem;
                 .parrafo {
                     display: block;
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
+                    ul {
+                        li {
+                            font-size: 1.5rem;
+                        }
+                    }
                 }
                 .descripcion-album, .descripcion-ep {
                     padding-top: 2rem;
