@@ -92,23 +92,66 @@
 </div>
 
 
+
+<!-- REPRODUCTOR DE MUSICA-->
+
+<div class="body">
+    <div class="music-player-container">
+
+        <div class="title-music-container">
+            <h4 class="song-title" id="currentSongTitle"></h4>
+            <span class="song-author" id="currentSongAuthor"></span>
+        </div>
+
+        <div class="controls-music-container">
+            <div class="progress-song-container">
+                <div class="progress-bar">
+                    <span class="progress"></span>
+                </div>
+            </div>
+            <div class="time-container">
+                <span class="time-left" id="CurrentSongTime"></span>
+                <span class="time-left" id="SongLength"></span>
+            </div>
+        </div>
+
+        <audio controls preload="metadata" src="../multimedia/canciones/hola2.mp3" id="audio"></audio>
+
+        <div class="main-song-controls">
+            <img src="../multimedia/png/Backward.svg" alt="" class="icon" id="Back10">
+            <img src="../multimedia/png/Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="../multimedia/png/Forward.svg" alt="" class="icon" id="Plus10">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
     <main>
         <h1>discos</h1>
 
+
+
         <div id="discos">  
-            <div class="canciones">
+            <div class="canciones playlist-container">
                 <h2 class="h2-music">El Degradé Del Atardecer</h2>
-                    <ul class="lista-music">
-                        <li class="li-pad">Mi Despertar</li>
-                        <li class="li-pad">Si Querés la Verdad</li>
-                        <li class="li-pad">Desordenada</li>
-                        <li class="li-pad">Oda al Otoño Por Venir</li>
-                        <li class="li-pad">Tu Luz Sin Fin</li>
-                        <li class="li-pad">Levitar</li>
-                        <li class="li-pad">El Mar Volar</li>
-                        <li class="li-pad">Dibujando El Cielo</li>
-                        <li class="li-pad">Aire</li>
-                        <li class="li-pad">Suelto Los Tientos</li>
+                
+                    <ul id="playlist" class="lista-music">
+                        <li data-index="0" class="li-pad playlist-item">Mi Despertar</li>
+                        <li data-index="1" class="li-pad playlist-item">Si Querés la Verdad</li>
+                        <li data-index="2" class="li-pad playlist-item">Desordenada</li>
+                        <li data-index="3" class="li-pad playlist-item">Oda al Otoño Por Venir</li>
+                        <li data-index="4" class="li-pad playlist-item">Tu Luz Sin Fin</li>
+                        <li data-index="5" class="li-pad playlist-item">Levitar</li>
+                        <li data-index="6" class="li-pad playlist-item">El Mar Volar</li>
+                        <li data-index="7" class="li-pad playlist-item">Dibujando El Cielo</li>
+                        <li data-index="8" class="li-pad playlist-item">Aire</li>
+                        <li data-index="9" class="li-pad playlist-item">Suelto Los Tientos</li>
                     </ul>
             </div>                    
             <div class="img-album">
@@ -145,18 +188,18 @@
             <div class="canciones">
                 <h2 class="h2-music">Fluir</h2>
                     <ul class="lista-music">
-                        <li class="li-pad">Clara</li>
-                        <li class="li-pad">Andar</li>
-                        <li class="li-pad">Anidar Primaveras</li>
-                        <li class="li-pad">Instante Fugaz</li>
-                        <li class="li-pad">Abre</li>
-                        <li class="li-pad">Bienvenida</li>
-                        <li class="li-pad">Mariposa</li>
-                        <li class="li-pad">Sonrisa De Cristal</li>
-                        <li class="li-pad">Cálido Invierno</li>
-                        <li class="li-pad">No Estés Acá</li>
-                        <li class="li-pad">Desprender</li>
-                        <li class="li-pad">Fluir</li>
+                        <li data-index="10" class="li-pad playlist-item">Clara</li>
+                        <li data-index="11" class="li-pad playlist-item">Andar</li>
+                        <li data-index="12" class="li-pad playlist-item">Anidar Primaveras</li>
+                        <li data-index="13" class="li-pad playlist-item">Instante Fugaz</li>
+                        <li data-index="14" class="li-pad playlist-item">Abre</li>
+                        <li data-index="15" class="li-pad playlist-item">Bienvenida</li>
+                        <li data-index="16" class="li-pad playlist-item">Mariposa</li>
+                        <li data-index="17" class="li-pad playlist-item">Sonrisa De Cristal</li>
+                        <li data-index="18" class="li-pad playlist-item">Cálido Invierno</li>
+                        <li data-index="19" class="li-pad playlist-item">No Estés Acá</li>
+                        <li data-index="20" class="li-pad playlist-item">Desprender</li>
+                        <li data-index="21" class="li-pad playlist-item">Fluir</li>
                     </ul>
             </div>            
             <div class="img-album">
@@ -189,11 +232,11 @@
                 <h2 class="ep">El Degradé Del Atardecer</h2>
                 <h3 class="h3-music">Lado B</h3>
                     <ul class="lista-music">
-                        <li class="li-pad">Si Querés La Verdad</li>
-                        <li class="li-pad">El Mar Volar</li>
-                        <li class="li-pad">Aire</li>
-                        <li class="li-pad">Levitar</li>
-                        <li class="li-pad">Oda Al Otoño Por Venir</li>
+                        <li data-index="22" class="li-pad playlist-item">Si Querés La Verdad</li>
+                        <li data-index="23" class="li-pad playlist-item">El Mar Volar</li>
+                        <li data-index="24" class="li-pad playlist-item">Aire</li>
+                        <li data-index="25" class="li-pad playlist-item">Levitar</li>
+                        <li data-index="26" class="li-pad playlist-item">Oda Al Otoño Por Venir</li>
                     </ul>
             </div>
             <div class="img-album">
@@ -218,11 +261,11 @@
                 <h2 class="ep">El Degradé Del Atardecer</h2>
                 <h3 class="h3-music">Lado A</h3>
                     <ul class="lista-music">
-                        <li class="li-pad">Mi Despertar</li>
-                        <li class="li-pad">Tu Luz Sin Fin</li>
-                        <li class="li-pad">Dibujando El Cielo</li>
-                        <li class="li-pad">Desordenada</li>
-                        <li class="li-pad">Suelto Los Tientos</li>
+                        <li data-index="27" class="li-pad playlist-item">Mi Despertar</li>
+                        <li data-index="28" class="li-pad playlist-item">Tu Luz Sin Fin</li>
+                        <li data-index="29" class="li-pad playlist-item">Dibujando El Cielo</li>
+                        <li data-index="30" class="li-pad playlist-item">Desordenada</li>
+                        <li data-index="31" class="li-pad playlist-item">Suelto Los Tientos</li>
                     </ul>
             </div>
             <div class="img-album">
@@ -287,6 +330,7 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
+    <script src="../javascript/code.js"></script> 
 </body>
 </html>
