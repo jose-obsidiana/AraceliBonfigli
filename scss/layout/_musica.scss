@@ -29,7 +29,7 @@ main {
 
     div {
         .descripcion {
-            padding-left: 3rem;
+            padding-left: 2rem;
             .descripcion-album {
                 color: $azul-claro;
                 font-weight: bold;
@@ -75,6 +75,7 @@ main {
                         color: rgb(255, 245, 231);
                         background-color: $gris-oscuro;
                         border-radius: 8px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -147,6 +148,8 @@ main {
     .play-music {
         left: 75%;
         top: 18rem;
+        position: absolute;
+
         a {
             .play-img {
                 width: 20%;
@@ -173,7 +176,7 @@ main {
                 margin-top: 0;
             }
             .descripcion {
-                padding-left: 3rem;
+                padding-left: 2rem;
                 .parrafo {
                     display: block;
                     font-size: 1.6rem;
@@ -189,7 +192,7 @@ main {
                 }
             }
             .canciones {
-                padding-right: 3rem;
+                padding-right: 2rem;
                 .h3-music {
                     padding-left: 0;
                 }
@@ -211,7 +214,6 @@ main {
     .play-music {
         left: 87%;
         top: 20rem;
-        position: absolute;
         a {
             .play-img {
                 width: 20%;

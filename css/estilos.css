@@ -482,7 +482,7 @@ main div img {
   margin-top: 0.3rem; }
 
 main div .descripcion {
-  padding-left: 3rem; }
+  padding-left: 2rem; }
   main div .descripcion .descripcion-album {
     color: #46669c;
     font-weight: bold;
@@ -522,7 +522,8 @@ main div .canciones {
       main div .canciones .lista-music .li-pad:hover {
         color: #fff5e7;
         background-color: #474544;
-        border-radius: 8px; }
+        border-radius: 8px;
+        cursor: pointer; }
 
 @media screen and (min-width: 320px) {
   .header-pag {
@@ -561,7 +562,8 @@ main div .canciones {
     margin: 0 8rem; }
   .play-music {
     left: 75%;
-    top: 18rem; }
+    top: 18rem;
+    position: absolute; }
     .play-music a .play-img {
       width: 20%; } }
 
@@ -579,7 +581,7 @@ main div .canciones {
     width: 100%;
     margin-top: 0; }
   main div .descripcion {
-    padding-left: 3rem; }
+    padding-left: 2rem; }
     main div .descripcion .parrafo {
       display: block;
       font-size: 1.6rem; }
@@ -589,7 +591,7 @@ main div .canciones {
       padding-top: 2rem;
       font-size: 2rem; }
   main div .canciones {
-    padding-right: 3rem; }
+    padding-right: 2rem; }
     main div .canciones .h3-music {
       padding-left: 0; }
     main div .canciones .ep {
@@ -603,8 +605,7 @@ main div .canciones {
         font-size: 1.7rem; }
   main .play-music {
     left: 87%;
-    top: 20rem;
-    position: absolute; }
+    top: 20rem; }
     main .play-music a .play-img {
       width: 20%; } }
 
@@ -1303,7 +1304,7 @@ svg {
     bottom: auto;
     margin: 1rem; }
     .body .music-player-container {
-      width: 30vw;
+      width: 31vw;
       border-radius: 10px;
       padding: 2rem 0;
       border-radius: 10px; }
