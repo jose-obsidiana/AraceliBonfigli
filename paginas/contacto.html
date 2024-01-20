@@ -32,8 +32,7 @@
                 </div>
                 <div class="nav-dos">
                     <li><a class="a-pag" href="../paginas/galeria.html">Galería</a></li>      
-                    <li><a class="a-pag" href="../paginas/contacto.html">Contacto</a></li> 
-                    <li><a class="a-pag" href="../paginas/sobre_mi.html">Sobre Mí</a></li> 
+                    <li><a class="a-pag" href="../paginas/sobre_mi.html">Biografía</a></li> 
                 </div>               
             </ul>
         </nav>
@@ -42,7 +41,7 @@
     <!-- menu bootstrap dispositivo mobile -->
     <div id="bootstrap">
         <nav class="navbar bg-body-tertiary fixed-top header-bt">
-            <div class="container-fluid container-bt bg-cont">
+            <div class="container-fluid container-bt">
                 <a class="navbar-brand araceli-bt" href="../index.html">ARACELI BONFIGLI</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon navbar-icon-bt"></span>
@@ -57,7 +56,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 lista-bt">
                             <li class="nav-item">
-                                <a class="nav-link" href="../paginas/musica.html">Música</a>
+                                <a class="nav-link" href="musica.html">Música</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../paginas/videos.html">Videos</a>
@@ -69,10 +68,7 @@
                                 <a class="nav-link" href="../paginas/galeria.html">Galería</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../paginas/sobre_mi.html">Sobre Mí</a>
+                                <a class="nav-link" href="../paginas/sobre_mi.html">Biografía</a>
                             </li> 
                         </ul>
                     </div>
@@ -98,7 +94,7 @@
 
                 <div class="apellido">
                     <label for="apellido"></label>
-                    <input type="text" placeholder="Apellido" name="apellido" id="name_input" required>
+                    <input type="text" placeholder="Apellido" name="apellido" id="surname_input" required>
                 </div>
 
                 <div class="telefono">
@@ -136,8 +132,10 @@
     <footer class="footer bg-footer">
         <div class="iconos-info">
             <ul>
-                <li class="info num-pad">                        
-                    <img class="icon-dos" src="../multimedia/socialgris.png" alt=""> +54 3512191686
+                <li class="info num-pad">
+                    <a class="info num-pad" href="https://wa.me/543572543468" target="_blank">
+                    <img class="icon-dos" src="../multimedia/socialgris.png" alt=""> +54 9 3572 54 3468
+                    </a>
                 </li>    
                     
                 <li class="info">
@@ -146,36 +144,37 @@
             </ul>
         </div>
 
-    <nav>
-        <ul>
-            <div class="iconos-music">                   
-                <li>
-                    <a href="https://open.spotify.com/artist/6bj6JfRNNwpb3gpYDXEm2F?si=3SVL4trvQFaK5MLyZVpoAw" target="_blank">
-                    <img class="-icon-hover" src="../multimedia/spotifygris.png" alt="img-spotify"></a>
-                </li>
+        <nav>
+            <ul>
+                <div class="iconos-music">                   
+                    <li>
+                        <a href="https://open.spotify.com/artist/6bj6JfRNNwpb3gpYDXEm2F?si=3SVL4trvQFaK5MLyZVpoAw" target="_blank">
+                        <img class="-icon-hover" src="../multimedia/spotifygris.png" alt="img-spoty"></a>
+                    </li>
 
-                <li>
-                    <a href="https://www.youtube.com/@AraceliBonfigli" class="iconos-padding" target="_blank">
-                    <img src="../multimedia/youtubegris.png" alt="img-youtube"></a>
-                </li>
-            </div>
+                    <li>
+                        <a href="https://www.youtube.com/@AraceliBonfigli" class="iconos-padding" target="_blank">
+                        <img src="../multimedia/youtubegris.png" alt="img-youtube"></a>
+                    </li>
+                </div>
+                
+                <div class="iconos-redes">
+                    <li><a href="https://www.facebook.com/aracelibonfigli" class="iconos-padding" target="_blank">
+                        <img src="../multimedia/facebookgris.png" alt="img-facebook"></a>
+                    </li>
 
-            <div class="iconos-redes">
-                <li><a href="https://www.facebook.com/aracelibonfigli" class="iconos-padding" target="_blank">
-                    <img src="../multimedia/facebookgris.png" alt="img-facebook"></a>
-                </li>
-
-                <li><a href="https://www.instagram.com/aracelibonfigli" class="iconos-padding" target="_blank">
-                    <img src="../multimedia/instagramgris.png" alt="img-instagram"></a>
-                </li>
-            </div>
-        </ul>
-            
-    </nav>
-</footer>
+                    <li><a href="https://www.instagram.com/aracelibonfigli" class="iconos-padding" target="_blank">
+                        <img src="../multimedia/instagramgris.png" alt="img-instagram"></a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </footer>
 
 
     <script src="../javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
