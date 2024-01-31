@@ -569,6 +569,8 @@ main div .canciones {
     text-align: center;
     position: relative;
     z-index: 1; }
+  main div .img-position {
+    z-index: 0; }
   main div .descripcion {
     padding-bottom: 7rem; }
     main div .descripcion .parrafo {

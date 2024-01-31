@@ -142,6 +142,9 @@ main {
                 position: relative;
                 z-index: 1;
             }
+            .img-position {
+                z-index: 0;
+            }
             .descripcion {
                 padding-bottom: 7rem;
                 .parrafo {
