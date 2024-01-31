@@ -17,7 +17,7 @@ footer, .footer {
                 text-decoration: none;
                 color: $gris-oscuro;
                 &:hover { 
-                    @include estilos(2rem, $gris-claro);     
+                    @include estilos(1.5rem, $gris-claro);     
                 }
                 .icon-dos {
                     width: 10%;
@@ -69,10 +69,12 @@ footer, .index-footer {
                 }
                 div {
                     li {
-                        img {
-                            width: 35%;
-                            &:hover {
-                                width: 50%;
+                        a {
+                            img {
+                                width: 35%;
+                                &:hover {
+                                    width: 45%;
+                                }
                             }
                         }
                     }

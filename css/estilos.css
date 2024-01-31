@@ -293,7 +293,7 @@ footer, .footer {
     text-decoration: none;
     color: #474544; }
     footer div ul .info:hover, .footer div ul .info:hover {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #797979; }
     footer div ul .info .icon-dos, .footer div ul .info .icon-dos {
       width: 10%; }
@@ -329,10 +329,10 @@ footer, .index-footer {
     footer nav ul .iconos-redes, .footer nav ul .iconos-redes {
       display: flex;
       flex-direction: row; }
-    footer nav ul div li img, .footer nav ul div li img {
+    footer nav ul div li a img, .footer nav ul div li a img {
       width: 35%; }
-      footer nav ul div li img:hover, .footer nav ul div li img:hover {
-        width: 50%; }
+      footer nav ul div li a img:hover, .footer nav ul div li a img:hover {
+        width: 45%; }
   footer div ul .info, .footer div ul .info {
     font-size: 1.3rem; } }
 
