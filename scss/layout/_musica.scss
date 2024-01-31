@@ -29,7 +29,27 @@ main {
 
     div {
         .descripcion {
-            padding-left: 2rem;
+            padding-left: 0;
+            padding-right: 0;
+            .z-index {
+                z-index: 3;
+            }
+            .border-accordion {
+                border: 1px solid $gris-claro;
+
+            }
+            .boton-accordion {
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+            .lista-accordion {
+                font-size: 1.3rem;
+                text-shadow: 0 0 0 $gris-oscuro;
+                li {
+                    font-size: 1.3rem;
+                }
+
+            }
             .descripcion-album {
                 color: $azul-claro;
                 font-weight: bold;
@@ -123,7 +143,6 @@ main {
                 z-index: 1;
             }
             .descripcion {
-                padding: 0 1rem;
                 padding-bottom: 7rem;
                 .parrafo {
                     display: none;
@@ -181,6 +200,8 @@ main {
             }
             .descripcion {
                 padding-left: 2rem;
+                z-index: 2;
+
                 .parrafo {
                     display: block;
                     font-size: 1.6rem;

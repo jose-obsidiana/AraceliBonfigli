@@ -19,6 +19,10 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+        strong {
+            font-size: 1.3rem;
+            color: $gris-oscuro;
+        }
         .img-border {
             padding: 0;
             border: $gris-claro solid 2px;
@@ -47,7 +51,7 @@
         top: 0;
         right: 0;
         left: 0;
-        z-index: 2;
+        z-index: 3;
         padding: 2rem 4rem;
         div {
             .index-pag {
@@ -144,6 +148,7 @@
                         text-transform: uppercase;  
                         border-bottom: none;
                         margin: 0;
+                        text-decoration: none;
                             &:hover {
                                 color: $gris-claro;
                             }
@@ -164,6 +169,9 @@
                     button {
                         .navbar-icon-bt {
                             @include width-height (1.7rem, 1.7rem);
+                        }
+                        .img-close {
+                            width: 50%;
                         }
                     }
                 }

@@ -155,6 +155,9 @@ body {
   body span {
     font-size: 1.5rem;
     font-weight: bold; }
+  body strong {
+    font-size: 1.3rem;
+    color: #474544; }
   body .img-border {
     padding: 0;
     border: #797979 solid 2px; }
@@ -178,7 +181,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   padding: 2rem 4rem; }
   .header-pag div .index-pag {
     color: #474544; }
@@ -246,7 +249,8 @@ main div p {
     letter-spacing: 5px;
     text-transform: uppercase;
     border-bottom: none;
-    margin: 0; }
+    margin: 0;
+    text-decoration: none; }
     #bootstrap nav .container-bt .araceli-bt:hover {
       color: #797979; }
   #bootstrap nav .container-bt div .lista-bt {
@@ -260,6 +264,8 @@ main div p {
   #bootstrap nav .container-bt button .navbar-icon-bt {
     width: 1.7rem;
     height: 1.7rem; }
+  #bootstrap nav .container-bt button .img-close {
+    width: 50%; }
 
 @media screen and (min-width: 1024px) {
   .header-bt {
@@ -484,7 +490,20 @@ main div img {
   margin-top: 0.3rem; }
 
 main div .descripcion {
-  padding-left: 2rem; }
+  padding-left: 0;
+  padding-right: 0; }
+  main div .descripcion .z-index {
+    z-index: 3; }
+  main div .descripcion .border-accordion {
+    border: 1px solid #797979; }
+  main div .descripcion .boton-accordion {
+    font-weight: bold;
+    font-size: 1.3rem; }
+  main div .descripcion .lista-accordion {
+    font-size: 1.3rem;
+    text-shadow: 0 0 0 #474544; }
+    main div .descripcion .lista-accordion li {
+      font-size: 1.3rem; }
   main div .descripcion .descripcion-album {
     color: #46669c;
     font-weight: bold;
@@ -551,7 +570,6 @@ main div .canciones {
     position: relative;
     z-index: 1; }
   main div .descripcion {
-    padding: 0 1rem;
     padding-bottom: 7rem; }
     main div .descripcion .parrafo {
       display: none; }
@@ -585,7 +603,8 @@ main div .canciones {
     width: 100%;
     margin-top: 0; }
   main div .descripcion {
-    padding-left: 2rem; }
+    padding-left: 2rem;
+    z-index: 2; }
     main div .descripcion .parrafo {
       display: block;
       font-size: 1.6rem; }
@@ -699,6 +718,8 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
   main div .video-tres {
     grid-row: 3;
     grid-column: 1; }
+  main div .video-seis {
+    margin-bottom: 70rem; }
   main div .info-vid {
     display: block;
     width: 100%;
@@ -1281,7 +1302,7 @@ svg {
     align-items: end;
     position: fixed;
     bottom: 0%;
-    z-index: 3; }
+    z-index: 1; }
     .body .music-player-container {
       width: 100%;
       margin: 0;

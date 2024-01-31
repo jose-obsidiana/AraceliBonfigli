@@ -54,7 +54,9 @@
             <div class="offcanvas offcanvas-end bg-bt" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <a class="offcanvas-title araceli-bt" id="offcanvasNavbarLabel" href="">ARACELI BONFIGLI</a>
-                    <button type="button" class="btn-close boton-close-bt" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close boton-close-bt" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img class="img-close" src="../multimedia/png/cerrar.png" alt="img-cerrar">
+                    </button>
                 </div>
 
                 <div class="offcanvas-body">
@@ -153,29 +155,67 @@
             </div>                    
             <div class="descripcion">
                 <p class="descripcion-album">Album • 2023</p>
-                <p class="parrafo">Los Artistas que acompañaron este disco fueron:
-                    <ul class="parrafo">
-                        <li><span>Paula Rodriguez</span> (Coros)</li>
-                        <li><span>Noe Galván</span> (Coros)</li>
-                        <li><span>Matías Danglada</span> (Guitarra)</li>
-                        <li><span>Martín Dalmasso Molas</span> (Guitarra)</li>
-                        <li><span>Rafael Ríos</span> (Teclados)</li>
-                        <li><span>Agustín Palacios</span> (Bajo)</li>
-                        <li><span>Damían Barrera</span> (Batería)</li>
-                    </ul>
-                </p>
 
-                <p>
-                    <ul class="lista-padding parrafo">
-                        <li><span>Bren Coll</span> (Diseño Gráfico de Letras, Visuales y Escenografía)</li>
-                        <li><span>Camilo Gencarelli</span> (Sonido en Vivo y Grabación, Operación de Luces y Visuales)</li>
-                        <li><span>Yuliana Brutti, Paula Miranda, Franco De Franceschini</span> (Grabación Audiovisual)</li>
-                        <li><span>Poli Verrua</span> (Fotografía en Vivo y Edición de Video)</li>
-                        <li><span>Laura Mercado</span> (Prensa)</li>
-                        <li><span>Sebastían Bergallo</span> (Mix en Desdémona Estudio)</li>
-                        <li><span>Martín Bergallo</span> (Mastering en El Sensei Mastering)</li>
-                    </ul>
-                </p>
+                <div class="accordion z-index" id="accordionExample">
+                    <div class="accordion-item border-accordion">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Musicos
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body lista-accordion">
+                            <ul>
+                                <li><strong>Paula Rodriguez:</strong> Coros</li>
+                                <li><strong>Noe Galván:</strong> Coros</li>
+                                <li><strong>Matías Danglada:</strong> Guitarra</li>
+                                <li><strong>Martín Dalmasso Molas:</strong> Guitarra</li>
+                                <li><strong>Rafael Ríos:</strong> Teclados</li>
+                                <li><strong>Agustín Palacios:</strong> Bajo</li>
+                                <li><strong>Damían Barrera:</strong> Batería</li>
+                                <li><strong>Araceli Bonfigli:</strong> Voz y Guitarra</li>
+
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Equipo Técnico
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        <ul>
+                            <li><strong>Bren Coll:</strong> Diseño Gráfico de Letras, Visuales y Escenografía</li>
+                            <li><strong>Camilo Gencarelli:</strong> Sonido en Vivo y Grabación, Operación de Luces y Visuales</li>
+                            <li><strong>Yuliana Brutti, Paula Miranda, Franco De Franceschini:</strong> Grabación Audiovisual</li>
+                            <li><strong>Poli Verrua:</strong> Fotografía en Vivo y Edición de Video</li>
+                            <li><strong>Laura Mercado:</strong> Prensa</li>
+                            <li><strong>Sebastían Bergallo:</strong> Mix en Desdémona Estudio</li>
+                            <li><strong>Martín Bergallo:</strong> Mastering en El Sensei Mastering</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Descripción
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        El Degradé del Atardecer -  Full Album - Full Banda fue grabado y filmado en vivo el sábado 5 de noviembre de 2022 en el Centro Cultural Graciela Carena de la Ciudad de Córdoba, Argentina. 
+                        Este disco salió seleccionado por el INAMU (Instituto Nacional de la Música) en la "Convocatoria de Fomento Regional a la Música 2022" para llevar adelante su realización. 
+                    </div>
+                    </div>
+                </div>
+                </div>
+
             </div>
 
 
@@ -199,26 +239,94 @@
             <div class="img-album">
                 <img class="img-border" src="../multimedia/fluir.webp" alt="img-album-fluir">
             </div>
+
+
+
             <div class="descripcion">
                 <p class="descripcion-album" >Album • 2017</p>
-
-                <ul class="parrafo">
-                    <li><span>Manuel Arza</span> (Baterías en Cálido Invierno y Desprender)</li>
-                    <li><span>Matías Perez</span> (Contrabajo en Desprender y Cuerda de Tambores en Andar)</li>
-                    <li><span>Araceli Bonfigli</span> (Coros, Composiciones, Arreglos y Producción)</li>
-                </ul>
                 
-                <p>
-                    <ul class="parrafo lista-padding">
-                        <li><span>Araceli Bonfigli</span> (Dirección Musical y Artística, Producción Musical, Ejecutiva y Fonográfica)</li>
-                        <li><span>Gustavo Maciel, Daniel Kogan</span> (Técnicos de Grabación)</li>
-                        <li><span>Daniel Kogan</span> (Técnico de Mezcla, Operador y Asistente de Producción Musical)</li>
-                        <li><span>Sebastían Bergallo y Daniel Kogan</span> (Mastering)</li>
-                        <li><span>Jonathan Taibo</span> (Arte de Tapa, Diseño y Placas de las Gráficas)</li>
-                        <li><span>Lula Almirón</span> (Edición de Video y Doble Exposición)</li>
-                        <li><span>Jonathan Taibo, Sofía Dada Ríos, Claudia Daniele, Héctor Segundo, Lula Almirón</span> (Fotografías)</li>
-                    </ul>
-                </p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item border-accordion">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Musicos
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body lista-accordion">
+                            <ul>
+                                <li><strong>Gastón Hernández:</strong> Bajo en 1, 2, 3, 4, 5, 6, 7, 8, 11 y 12.</li>
+                                <li><strong>Ramiro Soler:</strong> Batería en 1, 2, 3, 4, 5, 6, 7, 8, 11 y 12.</li>
+                                <li><strong>Ariel Rodriguez:</strong> Rhodes en 3. Piano en 7 y 8.</li>
+                                <li><strong>Lucas Leguizamón:</strong> Piano en 5, 11 y 12. Hammond en 12.</li>
+                                <li><strong>Leandro Suarez:</strong> Rhodes y Piano en 4 y 10. Teclados en 1 y 2.</li>
+                                <li><strong>Cci Kiu:</strong> Teclado en 6. Arte Sonoro en 1, 6 y 9.</li>
+                                <li><strong>Alvaro Montedoro:</strong> Guitarra en 6, 10 y 12.</li>
+                                <li><strong>Gerardo Miotti:</strong> Guitarra en 1, 2 y 5.</li>
+                                <li><strong>Agustín Bonfigli:</strong> Coros en 1, 5, 6, 8 y 12.</li>
+                                <li><strong>Agustín Dominguez:</strong> Guitarra en 4 y 8.</li>
+                                <li><strong>Eugenia Menta:</strong> Cello en 3, 7 y 8.</li>
+                                <li><strong>Luciano Cuviello:</strong> Percusión en 12. Cuerda de candombe en 2.</li>
+                                <li><strong>Valentín Gómez:</strong> Bandoneón en 11.</li>
+                                <li><strong>Fernando Silva:</strong> Contrabajo en 11.</li>
+                                <li><strong>Pedro Gazi:</strong> Trompeta en 3 y 12.</li>
+                                <li><strong>Sergio Alonso:</strong> Saxo en 12.</li>
+                                <li><strong>Alejandro Artacho:</strong> Trombón en 12.</li>
+                                <li><strong>Daniel Kogan:</strong> Arte sonoro en 11.</li>
+                                <li><strong>Araceli Bonfigli:</strong> Batería en 9 y 11. Charango en 1. Tres Cubano en 12. Percusión en 4. Cuerda de candombe en 12. Bombo Legüero en 5. Arte Sonoro en 9. Voz, Coros y Guitarras (eléctricas, acústicas y/o de nylon) en todas las canciones.
+                                </li>
+                            </ul>
+
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Equipo Técnico
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        <ul>
+                            <li><strong>Gustavo Maciel:</strong> Técnico de Grabación en La Púa (Todos los instrumentos)</li>
+                            <li><strong>Matías Pérez:</strong> Técnico de Grabación en El Mate Místico (Contrabajo y Percusiones)</li>
+                            <li><strong>Daniel Kogan:</strong> Técnico de Grabación y Mezcla en Estudio Cibernube.</li>
+                            <li><strong>Sebastián Bergallo:</strong> Mastering.</li>
+                            <li><strong>Jonathan Taibo:</strong> Fotografías, arte de tapa y diseño.</li>
+                            <li><strong>Lula Almirón:</strong> Fotografías y doble exposición.</li>
+                            <li><strong>Sofía Dada Ríos, Claudia Daniele, Héctor Segundo:</strong> Fotografías.</li>
+                            <li><strong>Araceli Bonfigli:</strong> Composición, Arreglos, Producción y Dirección Musical / Dirección Artística / Producción Ejecutiva / Producción Fonográfica.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Descripción
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        Fluir es un disco de doce canciones que intentan contar sensaciones y estados, ires y venires. 
+                        La palabra Fluir significa lo que corre, lo que brota. De alguna manera ese movimiento en que transcurrimos, ese tiempo en el que devienen los días que habitamos atraviesan estas músicas. 
+                        Los procesos creativos son tan únicos como los resultados que de ellos proceden. Es por medio de los aprendizajes que podemos lograr que eso que en algún momento nos resultara influencia, nos atravesara como una flecha; hoy pueda ser parte de nuestro marco referencial, al que podemos elegir, cuestionar, alterar, modificar, transformar y transmutar. De eso se trata la identidad, de construcciones, que vamos dialécticamente cuestionando y aceptando. 
+
+                        En las canciones busqué reunir y encontrar músicas que desde concepciones teóricas pudiesen resultar disímiles, pero que fueron siempre entendidas desde la familiaridad con que se fueron volcando en mi mapa musical de viaje (con la melomanía característica de mi seno familiar); dichas música son cercanas entre sí por habitar la misma discoteca que ocupa cada vez más paredes en la habitación de los discos y libros de la casa donde me crié. 
+
+                        Intenté sostener musicalmente esa visión integracionista en mi música. Entendí ese camino de continuidad, de hermandad entre las distintos géneros y estilos, que van trenzando caminos, y tendiendo redes entre sus lenguajes; en su devenir van mutando, y están en constante transformación, en su natural caótica y contradictoria manera de existir, en la que comprende en su conformación las dualidades contradictorias como parte de la unidad que las compone y les otorga entidad y unicidad; allí se encuentra también Fluir. 
+
+                        Estas canciones no pretenden ser más que el soslayo de una forma de ver el mundo. Fluir pretende plasmar una forma de ser en el mundo.
+                        Este disco formó parte del Trabajo Final de Grado con el que se recibió de la Licenciatura en Composición musical con Orientación en Música Popular de LA Universidad Nacional de Villa María.
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
             </div>
 
 
@@ -238,17 +346,55 @@
             </div>
             <div class="descripcion">
                 <p class="descripcion-ep">EP • 2022</p>
-                <p class="parrafo">Los EP <span>El degradé del Atardecer</span> - <span>Lado A</span> y <span>Lado B</span> fueron gestados en plena pandemia, grabados en cuarentena, en el pequeño home studio de Araceli Bonfigli, en la soledad y la intimidad que cobijaron esos día y que intenta reflejar la compositora en la sonoridad de estas músicas, en las incesantes búsquedas de uno mismo en la infinidad de colores y sensaciones que dibujan los cielos cuando cae el sol. </p>        
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item border-accordion">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Musicos
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body lista-accordion">
+                            <ul>
+                                <li><strong>Marce Vicente:</strong> Cello en “El mar volar”</li>
+                                <li><strong>Araceli Bonfigli:</strong> Voz, Guitarras acústicas, de nylon y guitarrones. Percusión, programaciones y arte sonoro.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Equipo Técnico
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        <ul>
+                            <li><strong>Sebastián Bergallo:</strong> Mezcla en Desdémona Estudio.</li>
+                            <li><strong>Martín Bergallo:</strong> Mastering en Sensei Mastering.</li>
+                            <li><strong>Koky Schroeder:</strong> Fotografías, arte de tapa y diseño.</li>
+                            <li><strong>Araceli Bonfigli:</strong> Grabación y Edición. / Producción Musical y Dirección Artística. / Producción Ejecutiva y Fonográfica.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
                 
-                <p>
-                    <ul class=" parrafo">
-                        <li><span>Sebastían Bergallo</span> (Mix en Desdémona Estudio)</li>
-                        <li><span>Martín Bergallo</span> (Mastering en El Sensei Estudio)</li>
-                        <li><span>Marce Vicente</span> (Cello en una milonga)</li>
-                        <li><span>Koky Schroeder</span> (Gráficas y Fotografías)</li>
-                        <li><span>Araceli Bonfigli</span> (Composición y Producción Musical)</li>
-                    </ul>
-                </p>
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Descripción
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        Los EP <strong>El degradé del Atardecer</strong> - <strong>Lado A</strong> y <strong>Lado B</strong> fueron gestados en plena pandemia, grabados en cuarentena, en el pequeño home studio de Araceli Bonfigli, en la soledad y la intimidad que cobijaron esos día y que intenta reflejar la compositora en la sonoridad de estas músicas, en las incesantes búsquedas de uno mismo en la infinidad de colores y sensaciones que dibujan los cielos cuando cae el sol. </p>   
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
 
             <div class="canciones">
@@ -267,17 +413,53 @@
             </div>
             <div class="descripcion">
                 <p class="descripcion-ep">EP • 2021</p> 
-                <p class="parrafo">Los EP <span>El degradé del Atardecer</span> - <span>Lado A</span> y <span>Lado B</span> fueron gestados en plena pandemia, grabados en cuarentena, en el pequeño home studio de Araceli Bonfigli, en la soledad y la intimidad que cobijaron esos día y que intenta reflejar la compositora en la sonoridad de estas músicas, en las incesantes búsquedas de uno mismo en la infinidad de colores y sensaciones que dibujan los cielos cuando cae el sol. </p>        
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item border-accordion">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Musicos
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body lista-accordion">
+                            <ul>
+                                <li><strong>Araceli Bonfigli:</strong> Voz, Guitarras acústicas, de nylon y guitarrones. Percusión, programaciones y arte sonoro.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Equipo Técnico
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        <ul>
+                            <li><strong>Sebastián Bergallo:</strong> Mezcla en Desdémona Estudio.</li>
+                            <li><strong>Martín Bergallo:</strong> Mastering en Sensei Mastering.</li>
+                            <li><strong>Koky Schroeder:</strong> Fotografías, arte de tapa y diseño.</li>
+                            <li><strong>Araceli Bonfigli:</strong> Grabación y Edición. / Producción Musical y Dirección Artística. / Producción Ejecutiva y Fonográfica.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
                 
-                <p>
-                    <ul class="parrafo">
-                        <li><span>Sebastían Bergallo</span> (Mix en Desdémona Estudio)</li>
-                        <li><span>Martín Bergallo</span> (Mastering en El Sensei Estudio)</li>
-                        <li><span>Marce Vicente</span> (Cello en una milonga)</li>
-                        <li><span>Koky Schroeder</span> (Gráficas y Fotografías)</li>
-                        <li><span>Araceli Bonfigli</span> (Composición y Producción Musical)</li>
-                    </ul>
-                </p>        
+                <div class="accordion-item border-accordion">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed boton-accordion bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Descripción
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body lista-accordion">
+                        Los EP <strong>El degradé del Atardecer</strong> - <strong>Lado A</strong> y <strong>Lado B</strong> fueron gestados en plena pandemia, grabados en cuarentena, en el pequeño home studio de Araceli Bonfigli, en la soledad y la intimidad que cobijaron esos día y que intenta reflejar la compositora en la sonoridad de estas músicas, en las incesantes búsquedas de uno mismo en la infinidad de colores y sensaciones que dibujan los cielos cuando cae el sol. </p>   
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
             
         </div>
@@ -326,7 +508,8 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
+    
     <script src="../javascript/code.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
 </body>
 </html>
