@@ -40,8 +40,8 @@
     }
 
     .bg-body {
-        background: rgb(252, 227, 204);
-        background: linear-gradient(180deg, rgba(255, 233, 214, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
+        background: rgb(247, 219, 193);
+        background: linear-gradient(180deg, rgba(255, 228, 204, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
         @extend %img-propiedades;
         background-attachment: fixed;
         color: $gris-oscuro;
@@ -177,6 +177,7 @@
                         font-family: 'Quicksand', sans-serif;
                         font-weight: 600;
                         border-bottom: none;
+
                     }
 
                     div {
@@ -200,6 +201,7 @@
                     li {
                         .nav-link {
                             font-size: 1.7rem;
+
                         }
                     }
                 }
