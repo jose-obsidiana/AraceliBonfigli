@@ -5,10 +5,12 @@
         ul {
             padding: 0;
             margin: 0;
+
             li {
                 font-size: 1.5rem;
                 list-style-type: none;
                 text-shadow: 0 0 0 $gris-oscuro;
+
                 a {
                     text-shadow: none;
                 }
@@ -19,27 +21,30 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+
         strong {
             font-size: 1.3rem;
             color: $gris-oscuro;
         }
+
         .img-border {
             padding: 0;
             border: $gris-claro solid 2px;
+
             &:hover {
                 opacity: 0.7;
-                filter: blur(1px); 
+                filter: blur(1px);
                 filter: grayscale(30%);
             }
         }
-    } 
+    }
 
     .bg-body {
         background: rgb(252, 227, 204);
         background: linear-gradient(180deg, rgba(255, 233, 214, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
         @extend %img-propiedades;
         background-attachment: fixed;
-        color: $gris-oscuro; 
+        color: $gris-oscuro;
     }
 
     .header-pag {
@@ -53,20 +58,24 @@
         left: 0;
         z-index: 3;
         padding: 2rem 4rem;
+
         div {
             .index-pag {
                 color: $gris-oscuro;
+
                 &:hover {
                     color: $gris-claro;
                 }
             }
         }
+
         nav {
             ul {
                 div {
                     .a-pag {
                         color: $gris-oscuro;
                         font-size: 1.7rem;
+
                         &:hover {
                             color: $gris-claro;
                         }
@@ -75,11 +84,12 @@
             }
         }
     }
-    
+
     main {
         @extend %png-mobile;
         @extend %png-tablet;
         @extend %png-desktop;
+
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -90,19 +100,22 @@
             font-weight: 600;
             text-shadow: 0 0 0 $azul-oscuro;
         }
+
         div {
             h2 {
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 600;
                 text-transform: uppercase;
-                
+
             }
+
             h3 {
                 font-family: 'Quicksand', sans-serif;
                 text-align: center;
                 font-weight: 600;
                 color: $gris-oscuro;
             }
+
             p {
                 font-family: 'Quicksand', sans-serif;
                 @include estilos(1.6rem, $gris-oscuro);
@@ -119,6 +132,7 @@
             h1 {
                 @include estilos(3rem, $gris-oscuro);
             }
+
             h2 {
                 @include estilos(2rem, $azul-claro);
             }
@@ -126,74 +140,92 @@
     }
 
 
-        /* propiedades bootstrap - header */
-        #bootstrap {
-            nav {
-                .container-bt {
-                    padding: 2rem;
-                    background-color: $bg-header;
-                    position: fixed;
-                    top: 0;
-                    border-bottom: $border-bottom solid 0.5px;
-                    box-shadow: 0 0 5px $border-bottom;
-                    .bg-bt {
-                        background: rgb(255,233,214);
-                        background: linear-gradient(180deg, rgba(253, 236, 221, 0.947) 34%, rgba(207, 226, 254, 0.932) 100%);
+    /* propiedades bootstrap - header */
+    #bootstrap {
+        nav {
+            .container-bt {
+                padding: 2rem;
+                background-color: $bg-header;
+                position: fixed;
+                top: 0;
+                border-bottom: $border-bottom solid 0.5px;
+                box-shadow: 0 0 5px $border-bottom;
+
+                .bg-bt {
+                    background: rgb(255, 233, 214);
+                    background: linear-gradient(180deg, rgba(253, 236, 221, 0.947) 34%, rgba(207, 226, 254, 0.932) 100%);
+                }
+
+                .araceli-bt {
+                    @include estilos(2rem, $gris-oscuro);
+                    font-family: 'Montserrat', Arial, sans-serif;
+                    font-weight: 700;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    border-bottom: none;
+                    margin: 0;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $gris-claro;
                     }
-                    .araceli-bt {
-                        @include estilos(2rem, $gris-oscuro);
-                        font-family: 'Montserrat', Arial, sans-serif;
-                        font-weight: 700;
-                        letter-spacing: 5px;
-                        text-transform: uppercase;  
+                }
+
+                div {
+                    .lista-bt {
+                        font-size: 0.5rem;
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 600;
                         border-bottom: none;
-                        margin: 0;
-                        text-decoration: none;
-                            &:hover {
-                                color: $gris-claro;
-                            }
                     }
+
                     div {
-                        .lista-bt {
-                            font-size: 0.5rem;
-                            font-family: 'Quicksand', sans-serif;
-                            font-weight: 600;
-                            border-bottom: none;
-                        }
-                        div {
-                            .boton-close-bt {
-                                @include width-height(3rem, 3rem);
-                            }
+                        .boton-close-bt {
+                            @include width-height(3rem, 3rem);
                         }
                     }
-                    button {
-                        .navbar-icon-bt {
-                            @include width-height (1.7rem, 1.7rem);
-                        }
-                        .img-close {
-                            width: 50%;
+                }
+
+                button {
+                    .navbar-icon-bt {
+                        @include width-height (1.7rem, 1.7rem);
+                    }
+
+                    .img-close {
+                        width: 50%;
+                    }
+                }
+
+                ul {
+                    li {
+                        .nav-link {
+                            font-size: 1.7rem;
                         }
                     }
                 }
             }
         }
-    
+    }
+
 
     @media screen and (min-width:1024px) {
         .header-bt {
             display: none;
         }
+
         main {
             h1 {
                 font-size: 4rem;
                 margin: 12rem;
             }
+
             h2 {
                 font-size: 2.3rem;
             }
+
             h3 {
                 font-size: 1.8rem;
-                
+
             }
         }
     }

@@ -116,6 +116,7 @@ main {
             position: fixed;
             left: 80%;
             top: 18rem;
+            z-index: -1;
             a {
                 .play-img {
                     width: 40%;

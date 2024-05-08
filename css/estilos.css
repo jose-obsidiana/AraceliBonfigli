@@ -266,6 +266,8 @@ main div p {
     height: 1.7rem; }
   #bootstrap nav .container-bt button .img-close {
     width: 50%; }
+  #bootstrap nav .container-bt ul li .nav-link {
+    font-size: 1.7rem; }
 
 @media screen and (min-width: 1024px) {
   .header-bt {
@@ -554,7 +556,8 @@ main div .canciones {
   .play-music {
     position: fixed;
     left: 80%;
-    top: 18rem; }
+    top: 18rem;
+    z-index: -1; }
     .play-music a .play-img {
       width: 40%; }
   main #discos {
