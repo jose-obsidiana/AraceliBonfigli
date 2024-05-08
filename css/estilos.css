@@ -167,8 +167,8 @@ body {
       filter: grayscale(30%); }
 
 .bg-body {
-  background: #fce3cc;
-  background: linear-gradient(180deg, rgba(255, 233, 214, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
+  background: #f7dbc1;
+  background: linear-gradient(180deg, rgba(255, 228, 204, 0.947) 34%, rgba(206, 211, 255, 0.932) 100%);
   background-attachment: fixed;
   color: #474544; }
 
@@ -737,29 +737,36 @@ main div ul li .span-vid, main #contenedor-videos ul li .span-vid {
     position: relative;
     left: 0; } }
 
-main div .img-libros, main .contenedor-libros .img-libros {
+main div .img-libros,
+main .contenedor-libros .img-libros {
   position: relative; }
-  main div .img-libros .libro-portada, main .contenedor-libros .img-libros .libro-portada {
+  main div .img-libros .libro-portada,
+  main .contenedor-libros .img-libros .libro-portada {
     position: absolute;
     transition: opacity 1.8s;
     left: 0; }
-    main div .img-libros .libro-portada:hover, main .contenedor-libros .img-libros .libro-portada:hover {
+    main div .img-libros .libro-portada:hover,
+    main .contenedor-libros .img-libros .libro-portada:hover {
       opacity: 0; }
 
-main div .lista-libros, main .contenedor-libros .lista-libros {
+main div .lista-libros,
+main .contenedor-libros .lista-libros {
   font-weight: bold;
   margin-top: 4rem; }
 
-main div .fecha, main .contenedor-libros .fecha {
+main div .fecha,
+main .contenedor-libros .fecha {
   color: #46669c;
   font-weight: bold;
   font-size: 2rem;
   margin: 0; }
 
-main div .fecha-dos, main .contenedor-libros .fecha-dos {
+main div .fecha-dos,
+main .contenedor-libros .fecha-dos {
   color: #6f5a96; }
 
-main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
+main .boton-libro-uno .boton-libro,
+main .boton-libro-dos .boton-libro {
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: 500;
@@ -773,7 +780,8 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
   text-decoration: none;
   display: block;
   padding-top: 0.5rem; }
-  main .boton-libro-uno .boton-libro:hover, main .boton-libro-dos .boton-libro:hover {
+  main .boton-libro-uno .boton-libro:hover,
+  main .boton-libro-dos .boton-libro:hover {
     background-color: #b7bac4; }
 
 @media screen and (min-width: 320px) {
@@ -785,7 +793,8 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
       color: #2b4d7a; }
     main .contenedor-libros .h2-libro-dos {
       color: #643e8c; }
-    main .contenedor-libros .h2-libro-uno, main .contenedor-libros .h2-libro-dos {
+    main .contenedor-libros .h2-libro-uno,
+    main .contenedor-libros .h2-libro-dos {
       padding: 1.5rem 0rem;
       margin: 0;
       letter-spacing: 2px; }
@@ -796,15 +805,18 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
       object-fit: cover; }
     main .contenedor-libros .lista-libros {
       padding-bottom: 1rem; }
-    main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
+    main .contenedor-libros .boton-libro-uno,
+    main .contenedor-libros .boton-libro-dos {
       padding: 0 5rem 13rem;
       width: 21rem;
       text-align: center;
       margin-left: 0; }
-      main .contenedor-libros .boton-libro-uno .img-nube, main .contenedor-libros .boton-libro-dos .img-nube {
+      main .contenedor-libros .boton-libro-uno .img-nube,
+      main .contenedor-libros .boton-libro-dos .img-nube {
         padding: 0;
         width: 50%; }
-      main .contenedor-libros .boton-libro-uno .boton-libro, main .contenedor-libros .boton-libro-dos .boton-libro {
+      main .contenedor-libros .boton-libro-uno .boton-libro,
+      main .contenedor-libros .boton-libro-dos .boton-libro {
         font-size: 1.3rem;
         height: 3rem; } }
 
@@ -813,25 +825,30 @@ main .boton-libro-uno .boton-libro, main .boton-libro-dos .boton-libro {
     margin: 0 8rem; }
     main .contenedor-libros .img-libros {
       width: 70%; }
-    main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
+    main .contenedor-libros .boton-libro-uno,
+    main .contenedor-libros .boton-libro-dos {
       justify-content: center; } }
 
 @media screen and (min-width: 1024px) {
   main .contenedor-libros {
+    height: 180rem;
     margin: 0 12rem;
     display: grid;
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: 4% 12% 30% 4% 18% 20%;
     row-gap: 2rem; }
-    main .contenedor-libros .boton-libro-uno, main .contenedor-libros .boton-libro-dos {
+    main .contenedor-libros .boton-libro-uno,
+    main .contenedor-libros .boton-libro-dos {
       right: 20%;
       width: 23rem;
       margin: 2rem 0;
       justify-self: center; }
-      main .contenedor-libros .boton-libro-uno .img-nube, main .contenedor-libros .boton-libro-dos .img-nube {
+      main .contenedor-libros .boton-libro-uno .img-nube,
+      main .contenedor-libros .boton-libro-dos .img-nube {
         padding: 0;
         width: 60%; }
-    main .contenedor-libros .h2-libro-uno, main .contenedor-libros .h2-libro-dos {
+    main .contenedor-libros .h2-libro-uno,
+    main .contenedor-libros .h2-libro-dos {
       font-size: 2.5rem;
       letter-spacing: 3px; }
     main .contenedor-libros .h2-libro-uno {
