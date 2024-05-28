@@ -155,6 +155,8 @@ body {
   body span {
     font-size: 1.5rem;
     font-weight: bold; }
+  body p {
+    text-align: justify; }
   body strong {
     font-size: 1.3rem;
     color: #474544; }
