@@ -480,9 +480,13 @@ header div a {
   .imagen-body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../multimedia/12.webp); } }
 
-.contenedor nav ul div .a-music, .header-music nav ul div .a-music, .header-pag nav ul div .a-music {
+.contenedor nav ul div .a-music,
+.header-music nav ul div .a-music,
+.header-pag nav ul div .a-music {
   color: #474544; }
-  .contenedor nav ul div .a-music:hover, .header-music nav ul div .a-music:hover, .header-pag nav ul div .a-music:hover {
+  .contenedor nav ul div .a-music:hover,
+  .header-music nav ul div .a-music:hover,
+  .header-pag nav ul div .a-music:hover {
     color: #797979; }
 
 /* discos */
@@ -559,7 +563,7 @@ main div .canciones {
     position: fixed;
     left: 80%;
     top: 18rem;
-    z-index: -1; }
+    z-index: 0; }
     .play-music a .play-img {
       width: 40%; }
   main #discos {
@@ -617,7 +621,8 @@ main div .canciones {
       font-size: 1.6rem; }
       main div .descripcion .parrafo ul li {
         font-size: 1.5rem; }
-    main div .descripcion .descripcion-album, main div .descripcion .descripcion-ep {
+    main div .descripcion .descripcion-album,
+    main div .descripcion .descripcion-ep {
       padding-top: 2rem;
       font-size: 2rem; }
   main div .canciones {
